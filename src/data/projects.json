@@ -1,0 +1,32 @@
+[{
+    "key": "project1",
+    "project_title": "Project 1",
+    "project_description": "Project Description for cards on hover",
+    "media": {
+        "project_image": "URL or path to project image",
+        "project_video": "URL or path to project video"
+    },
+    "project_links": [
+        {"type": "github", "url": "link1"},
+        {"type": "linkedin", "url": "link2"},
+        {"type": "live", "url": "link3"}
+    ],
+    "case_study": [
+    {"heading": "Project objective",
+    "body": "content"},
+    {"heading": "Background information",
+    "body": "content"},
+    {"heading": "Project challenges and requirements",
+    "body": "content"},
+    {"heading": "Architecture and system design",
+    "body": "content"},
+    {"heading": "UX/UI considerations",
+    "body": "content"},
+    {"heading": "Results",
+    "body": "content"},
+    {"heading": "Lessons learned and future recommendations",
+    "body": "content"},
+    {"heading": "Conclusion",
+    "body": "content"}
+    ]
+}]

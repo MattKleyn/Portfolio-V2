@@ -1,0 +1,64 @@
+[
+  {
+    "section": "hero",
+    "fname": "Matthew",
+    "lname": "Kleynhans",
+    "job": "Full-stack Developer",
+    "description": "I design and build end-to-end web systems with an architectural mindset — extensible, maintainable, and crafted with the human intention missing from AI‑generated work."
+  },
+
+  {
+    "section": "brand_statement",
+    "statement": "Designing with purpose, developing with intent"
+  },
+
+  {
+    "section": "value_proposition",
+    "heading": ["How", "I build"],
+    "problem": "With the rise of AI‑generated solutions, many digital products are built hastily and without direction. They often share the same generic look, hide structural flaws, and lack the maintainability and extensibility that real businesses require. What seems fast and convenient initially, becomes a long‑term liability — a black‑box system that’s hard to understand, harder to scale, and expensive to fix.",
+    "solution": "Solving this requires more than tools. It requires human judgment, full system understanding, and deliberate design — someone who can leverage AI where it helps, avoid its weaknesses, and build systems with clarity, structure, and long‑term quality in mind.",
+    "why_me": "My management background gives me experience with planning, sequencing, constraints, and delivering work under real‑world conditions — skills I bring directly into software development.",
+    "work_values": {
+      "Architectural clarity": "I design systems with clear structure and long‑term maintainability in mind — not quick fixes or black‑box solutions.",
+      "End‑to‑end thinking": "From planning to deployment, every decision is intentional, ensuring the final product is coherent, scalable, and easy to extend.",
+      "Human judgment": "I leverage AI where it helps, but rely on human reasoning, creativity, and domain understanding to avoid generic, cookie‑cutter outputs.",
+      "User‑centered design": "I build interfaces and workflows that respect real users, real constraints, and real business needs — not just what “looks good” in a mockup.",
+      "Clean implementation": "I write code that is readable, testable, and future‑proof, reducing long‑term technical debt and improving system quality.",
+      "Consistent patterns": "I build modular, reusable components that keep interfaces consistent, predictable, and easy to evolve over time."
+    }
+  },
+
+  {
+    "section": "works",
+    "heading": "Works"
+  },
+
+  {
+    "section": "capabilities",
+    "heading": ["What", "I build"],
+    "items": {
+      "Websites and frontend interfaces": "I design and build clean, component‑driven interfaces — from simple static sites to dynamic React applications. Every interface is structured, accessible, and supported by thoughtful motion design that guides attention without overwhelming it.",
+      "Backend systems": "I build Python‑powered backend systems and ETL pipelines that handle data reliably and scale with your needs.",
+      "Custom web applications": "I develop full‑stack applications using modern JavaScript or Python ecosystems, including SPAs, dashboards, internal tools, and data‑driven products with relational databases when needed.",
+      "Content-driven sites": "I create CMS‑powered sites (Webflow or custom) for blogs, portfolios, and marketing pages where non‑technical users need to manage content easily.",
+      "End-to-end delivery": "From planning and architecture to implementation and deployment, I deliver complete solutions — including documentation, maintainability considerations, and optional ongoing support."
+    }
+  },
+
+  {
+    "section": "about",
+    "heading": "About Me",
+    "summary": "In a personal capacity, something short — a quick hi from me as a person. You can read more about my backstory and journey through the link."
+  },
+
+  {
+    "section": "footer",
+    "cta": "Have a great idea you wish to bring to life? Reach out, let’s collaborate!",
+    "bio": "I am a full-stack developer based mainly in the PERN stack (PostgreSQL, Express, React, Node). This enables me to build entire webapps end to end and have full control over the entire process. Whether I'm building simple static HTML + CSS sites or fully dynamic React SPAs with user authentication, I craft the best system in my ability. While mainly dealing with the web stack, I also have experience building ETL pipelines and web apps with Python. These data-heavy builds give me a wide range in the projects I am able to take on.",
+    "links": {
+      "linkedin": "https://linkedIn/profile",
+      "github": "https://github/profile",
+      "fiverr": "https://fivrr/profile"
+    }
+  }
+]
