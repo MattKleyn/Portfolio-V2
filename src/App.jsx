@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import Heading from './components/elements/Heading'
+import HeroSection from './sections/HeroSection'
 
 function App() {
   return (
     <div className="App">
-      <Heading />
+      <HeroSection />
     </div>
   )
 }
+
 export default App

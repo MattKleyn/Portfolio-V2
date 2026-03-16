@@ -1,33 +1,10 @@
-**Architecture**
-Currently in active development, this portfolio is a client-side, Vite React SPA with clear separation into:
-- Modular component architecture,
+# Architecture
+Currently in active development, this portfolio is a client-side, Vite React SPA that utilizes a component-library/design system repo that Im building alongside the portfolio. This gives me maximum flexibility if I change or add on/remove from the portfolio witout expensive refactors.
+
+This portfolio becomes the component library demo additionally with the following aspects:
 - React router navigation layer,
 - Context-based global UI state,
-- Grid-based layout system,
-- Lazy-loaded assets,
-- GSAP motion layer,
 - JSON-based content layer,
 - Hosting agnostic deployment,
 - Future-ready serverless backend integration
 
-
-
-
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
