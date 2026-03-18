@@ -9,15 +9,15 @@ function HeroSection() {
     return <div>
         <Section as='section' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
-                <GridItem as='div' col={`3 / span 3`} row={`2 / span 3`}>
+                <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
                     <Container as='div' maxWidth='full' className='hero_image'>
                         <Image src={heroImage} alt='a headshot of myself' width="200" />
                     </Container>
                 </GridItem>
-                <GridItem as='div' col={`7 / span 3`} row={`2 / span 3`}>
+                <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>
                     <Container as='div' direction='column' gap='md' className='hero_content'>
                         <Container as='div' direction='column' gap='md' className='hero_text'>
-                            <Heading level="h2" className='job_title'>{`${me[0].job}`}</Heading>
+                            <Heading level="h3" className='job_title'>{`${me[0].job}`}</Heading>
                             <Paragraph level="md">{`${me[0].description}`}</Paragraph>
                         </Container>
                         <Container as='div' direction='row' gap='sm' className='hero_socials'>
@@ -27,7 +27,7 @@ function HeroSection() {
                         </Container>
                     </Container>
                 </GridItem>
-                <GridItem as='div' col={`1 / span 11`} row={`5 / span 2`}>
+                <GridItem as='div' col="1 / span 12" row="5 / span 2" className='hero_gridwrap_fullname'>
                     <Heading level="h1" className='full_name'>{`${me[0].fname} ${me[0].lname}`}</Heading>
                 </GridItem>
             </GridContainer>

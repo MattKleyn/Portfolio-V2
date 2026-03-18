@@ -1,3 +1,16 @@
-body {
+* {
     font-weight: 300;
 }
+
+.display-grid { display: grid; }
+.gap-lg { gap: var(--space-lg); }
+
+/* .hero_gridwrap_img {}
+.hero_gridwrap_job {} */
+.hero_gridwrap_fullname {
+    align-content: end;
+}
+
+
+/*h3 token to change min clamp from 36 to 24 or otherway around*/
+/*text weight tokens light, regular, medium and semi bold*/
