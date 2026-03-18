@@ -11,6 +11,24 @@
     align-content: end;
 }
 
+.hero_value_statement {
+    width: 20rem;
+}
+
+.hero_socials {
+    align-items: center;
+}
+
+.hero_image_container {
+    justify-content: center;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.hero_image { width: 100%; }
+
+
+
 
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
 /*text weight tokens light, regular, medium and semi bold*/

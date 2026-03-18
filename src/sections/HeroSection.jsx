@@ -10,17 +10,17 @@ function HeroSection() {
         <Section as='section' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
-                    <Container as='div' maxWidth='full' className='hero_image'>
-                        <Image src={heroImage} alt='a headshot of myself' width="200" />
+                    <Container as='div' maxWidth='full' className='hero_image_container'>
+                        <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image'/>
                     </Container>
                 </GridItem>
                 <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>
-                    <Container as='div' direction='column' gap='md' className='hero_content'>
-                        <Container as='div' direction='column' gap='md' className='hero_text'>
+                    <Container as='div' direction='column' gap='xl' className='hero_content'>
+                        <Container as='div' direction='column' gap='lg' className='hero_text'>
                             <Heading level="h3" className='job_title'>{`${me[0].job}`}</Heading>
-                            <Paragraph level="md">{`${me[0].description}`}</Paragraph>
+                            <Paragraph level="md" className='hero_value_statement'>{`${me[0].description}`}</Paragraph>
                         </Container>
-                        <Container as='div' direction='row' gap='sm' className='hero_socials'>
+                        <Container as='div' direction='row' gap='md' className='hero_socials'>
                             <Link href="www.google.com" target="_blank"><Image src={linkedinIcon} alt='open tab to LinkedIn profile' className='hero_social_icon' variant='icon'/></Link>
                             <Link href="www.google.com" target="_blank"><Image src={githubIcon} alt='open tab to Github profile' className='hero_social_icon' variant='icon'/></Link>
                             <Link href="www.google.com" target="_blank"><Image src={fiverrIcon} alt='open tab to Fiverr profile' className='hero_social_icon' variant='icon'/></Link>
