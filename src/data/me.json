@@ -35,7 +35,7 @@
 
   {
     "section": "capabilities",
-    "heading": ["What", "I build"],
+    "heading": ["What I", "Build"],
     "items": {
       "Websites and frontend interfaces": "I design and build clean, component‑driven interfaces — from simple static sites to dynamic React applications. Every interface is structured, accessible, and supported by thoughtful motion design that guides attention without overwhelming it.",
       "Backend systems": "I build Python‑powered backend systems and ETL pipelines that handle data reliably and scale with your needs.",

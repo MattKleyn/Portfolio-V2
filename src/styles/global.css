@@ -93,5 +93,20 @@ body {
     justify-self: end;
 }
 
+.heading_build {
+    text-wrap-mode: nowrap;
+}
+
+.build_card {
+    border-bottom: 1px solid var(--color-alt-light);
+    padding-bottom: var(--space-md);
+    min-height: var(--space-3xl);
+}
+
+.build_title {
+    text-wrap-mode: nowrap;
+    min-width: 406px;
+}
+
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
 /*text weight tokens light, regular, medium and semi bold*/
