@@ -11,3 +11,87 @@ body {
 .hero_grid {
     height: 100vh;
 }
+
+* {
+    font-weight: 300;
+}
+
+.display-grid { display: grid; }
+.gap-lg { gap: var(--space-lg); }
+
+.home_page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+.hero_gridwrap_fullname {
+    align-content: end;
+}
+
+.hero_value_statement {
+    width: 20rem;
+}
+
+.hero_socials {
+    align-items: center;
+}
+
+.hero_image_container {
+    justify-content: center;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.hero_image { 
+    width: 100%;
+ }
+
+.section_tagline {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-5xl);
+}
+
+.tagline_text {
+    text-transform: uppercase;
+    text-wrap-mode: nowrap;
+}
+
+.problem_statement {
+    font-weight: 500;
+}
+
+.heading_sm {
+    font-size: var(--font-size-3xl);
+    display: inline-block;
+    line-height: 1;
+}
+
+.values {
+    align-content: center;
+}
+
+.values_container {
+    flex-wrap: wrap;
+}
+
+.why_me {
+    max-width: 460px;
+}
+
+.button_primary_container {
+    padding-inline: var(--space-md);
+    padding-block: var(--space-sm);
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    
+}
+
+#button_primary_text {letter-spacing: 1px;}
+
+.button_wrapper {
+    justify-self: end;
+}
+
+/*h3 token to change min clamp from 36 to 24 or otherway around*/
+/*text weight tokens light, regular, medium and semi bold*/

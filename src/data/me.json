@@ -9,7 +9,7 @@
 
   {
     "section": "brand_statement",
-    "statement": "Designing with purpose, developing with intent"
+    "statement": ["Designing with purpose, ", "developing with intent"]
   },
 
   {

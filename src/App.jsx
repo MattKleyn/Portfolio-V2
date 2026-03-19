@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import HeroSection from './sections/HeroSection'
+import HomePage from './pages/Home'
 
 function App() {
   return (
     <div className="App">
-      <HeroSection />
+      <HomePage />
     </div>
   )
 }
