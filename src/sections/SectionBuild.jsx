@@ -4,7 +4,7 @@ import me from '../data/me.json';
 function SectionBuild() {
     return (
         <div>
-            <Section as='div' maxWidth='full' className='section_works'>
+            <Section as='section' maxWidth='full' className='section_works'>
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='works_grid'>
                     <GridItem as='div' col='1 / span 4' row='2 / span 1'>
                         <Container as='div' direction='flex' className='heading_build text-right'>

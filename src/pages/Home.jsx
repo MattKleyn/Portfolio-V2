@@ -3,6 +3,7 @@ import SectionTagline from "../sections/SectionTagline";
 import SectionValueProposition from "../sections/SectionValueProposition";
 import SectionWorks from "../sections/SectionWorks";
 import SectionBuild from "../sections/SectionBuild";
+import SectionAbout from "../sections/SectionAbout";
 
 function HomePage() {
     return (
@@ -12,6 +13,7 @@ function HomePage() {
             <SectionValueProposition />
             <SectionWorks />
             <SectionBuild />
+            <SectionAbout />
         </div>
     )
 }

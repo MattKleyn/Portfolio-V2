@@ -108,5 +108,18 @@ body {
     min-width: 406px;
 }
 
+.about_image {
+    filter: grayscale(100%);
+}
+
+.button_secondary_container {
+    align-self: flex-end;
+    padding-block: var(--space-sm);
+    width: fit-content;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.button_secondary_text {letter-spacing: 1px;}
+
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
 /*text weight tokens light, regular, medium and semi bold*/

@@ -4,7 +4,7 @@ import me from '../data/me.json';
 function SectionValueProposition () {
     return (
         <div>
-            <Section as='div' className='section_value_proposition' maxWidth='full'>
+            <Section as='section' className='section_value_proposition' maxWidth='full'>
                 <GridContainer as='div' col='repeat(12, 1fr)' rows='repeat(9, 1fr)' gap='lg'>
                     <GridItem as='div' col='5 / span 6' row='1 / span 2'>
                         <Container as='div' direction='row' gap='lg' maxWidth='full'>
