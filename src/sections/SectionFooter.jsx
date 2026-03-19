@@ -1,0 +1,45 @@
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, Link } from 'mattkleyn-component-library';
+import me from '../data/me.json';
+import im from'../assets/images/placeholder_hero_image.png';
+
+function Footer() {
+    return (
+        <footer>
+            <Section as='section' maxWidth='full'>
+                <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
+                    <GridItem as='div' col='4 / span 6' row='2 / span 1' >
+                        <Container as='div' direction='inline' maxWidth='full' className='footer_cta_container'>
+                            <Heading level='h3' >{`${me[6].cta}`}</Heading>
+                        </Container>
+                    </GridItem>
+                    <GridItem as='div' col='9 / span 2' row='3 / span 1'>
+                        <Container as='div' direction='inline' className='button_primary_container'>
+                            <Paragraph level='lg' id='button_primary_text'>Read more</Paragraph>
+                        </Container>
+                    </GridItem>
+                    <GridItem as='div' col='2 / span 4' row='4 / span 2' >
+                        <Container as='div' direction='row' gap='xl' maxWidth='full'>
+                            <Image src={im} alt='a more serious headshot' variant='cover' width='240'/>
+                            <Paragraph level='sm' id='kern-md'>{`${me[6].bio}`}</Paragraph>
+                        </Container>
+                    </GridItem>
+                    <GridItem as='div' col='9 / span 4' row='5 / span 1' className='footer_tagline'>
+                        <Container as='div' direction='row' gap='sm' maxWidth='full' className='tagline_container'>
+                            <Paragraph level='lg' className='tagline_text'>{`${me[1].statement[0]}`}</Paragraph>
+                            <Paragraph level='lg' className='tagline_text'>{`${me[1].statement[1]}`}</Paragraph>
+                        </Container>
+                    </GridItem>
+                    <GridItem as='div' col='4 / span 6' row='6 / span 1' className='footer_links_wrapper'>
+                        <Container as='div' direction='row' maxWidth='full' className='footer_links_container'>
+                            {Object.entries(me[6].links).map(([name, link]) => (
+                                <Link href={link} target='_blank' className='footer_link'>{name}</Link>
+                            ))}
+                        </Container>
+                    </GridItem>
+                </GridContainer>
+            </Section>
+        </footer>
+    )
+}
+
+export default Footer;

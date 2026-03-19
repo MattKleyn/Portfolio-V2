@@ -121,5 +121,27 @@ body {
 
 .button_secondary_text {letter-spacing: 1px;}
 
+.footer_cta_container {
+    text-align: center;
+}
+
+.footer_tagline {
+    align-content: flex-end;
+}
+.footer_links_wrapper{
+    padding-bottom: var(--space-md);
+    align-content: end;
+}
+
+.footer_links_container {
+    max-width: 100%;
+    justify-content: space-between;
+    
+}
+#kern-md {
+    
+    letter-spacing: 0px;
+}
+
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
 /*text weight tokens light, regular, medium and semi bold*/

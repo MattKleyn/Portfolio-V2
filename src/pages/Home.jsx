@@ -4,6 +4,7 @@ import SectionValueProposition from "../sections/SectionValueProposition";
 import SectionWorks from "../sections/SectionWorks";
 import SectionBuild from "../sections/SectionBuild";
 import SectionAbout from "../sections/SectionAbout";
+import Footer from "../sections/SectionFooter";
 
 function HomePage() {
     return (
@@ -14,6 +15,7 @@ function HomePage() {
             <SectionWorks />
             <SectionBuild />
             <SectionAbout />
+            <Footer />
         </div>
     )
 }
