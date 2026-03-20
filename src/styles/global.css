@@ -143,5 +143,9 @@ body {
     letter-spacing: 0px;
 }
 
+.logo {
+    max-width: 4rem;
+}
+
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
 /*text weight tokens light, regular, medium and semi bold*/
