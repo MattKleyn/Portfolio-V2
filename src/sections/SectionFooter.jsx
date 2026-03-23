@@ -9,7 +9,7 @@ function Footer() {
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
                     <GridItem as='div' col='4 / span 6' row='2 / span 1' >
                         <Container as='div' direction='inline' maxWidth='full' className='footer_cta_container'>
-                            <Heading level='h3' >{`${me[6].cta}`}</Heading>
+                            <Heading level='h3' className='footer_cta_text'>{`${me[6].cta}`}</Heading>
                         </Container>
                     </GridItem>
                     <GridItem as='div' col='9 / span 2' row='3 / span 1'>

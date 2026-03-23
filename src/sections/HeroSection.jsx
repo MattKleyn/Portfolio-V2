@@ -6,7 +6,7 @@ import githubIcon from '../assets/icons/icon_github.svg';
 import fiverrIcon from '../assets/icons/icon_fivrr.svg';
 
 function HeroSection() {
-    return <div>
+    return <div className='section_hero_wrapper'>
         <Section as='section' id='section_hero' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>

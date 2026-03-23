@@ -1,19 +1,75 @@
+/*──────────────────────────────
+  DOCUMENT
+──────────────────────────────*/
 body {
     background-color: white;
     color: black;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+* {
+    font-weight: 300;
+}
+
+/*──────────────────────────────
+  NAV SECTION
+──────────────────────────────*/
+.nav_root {
+    width: 100%;
+}
+
+.nav_bar {
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.nav_menu {
+    align-items: center;
+
+    .link {
+        font-weight: var(--font-weight-reg);
+    }
+
+    #button_secondary_text {
+        font-weight: var(--font-weight-reg);
+    }
+}
+
+.logo {
+    max-width: 3rem;
+    overflow: visible;
+}
+
+/*──────────────────────────────
+  GLOBAL STYLES
+──────────────────────────────*/
+.button_primary_container {
+    padding-inline: var(--space-md);
+    padding-block: var(--space-sm);
+    background-color: var(--color-text);
+    color: var(--color-bg);
+}
+
+#button_primary_text {letter-spacing: 1px;}
+
+.button_secondary_container {
+    align-self: flex-end;
+    padding-block: var(--space-sm);
+    width: fit-content;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.button_secondary_text {letter-spacing: 1px;}
+
+/*──────────────────────────────
+  HERO SECTION
+──────────────────────────────*/
 .section_hero {
     height: 100vh;
 }
 
 .hero_grid {
     height: 100vh;
-}
-
-* {
-    font-weight: 300;
 }
 
 .display-grid { display: grid; }
@@ -38,15 +94,20 @@ body {
 }
 
 .hero_image_container {
-    justify-content: center;
     overflow: hidden;
     max-height: 100%;
+    background-color: #FAFAFA;
 }
 
 .hero_image { 
     width: 100%;
+    /*dont forget fix this image positioning*/
+    height: 100%;
  }
 
+ /*──────────────────────────────
+  TAGLINE SECTION
+──────────────────────────────*/
 .section_tagline {
     padding-top: var(--space-3xl);
     padding-bottom: var(--space-5xl);
@@ -57,6 +118,9 @@ body {
     text-wrap-mode: nowrap;
 }
 
+/*──────────────────────────────
+  VALUE PROPOSITION SECTION
+──────────────────────────────*/
 .problem_statement {
     font-weight: 500;
 }
@@ -108,26 +172,34 @@ body {
     min-width: 406px;
 }
 
+/*──────────────────────────────
+  WORKS SECTION
+──────────────────────────────*/
+
+
+
+/*──────────────────────────────
+  ABOUT SECTION
+──────────────────────────────*/
 .about_image {
     filter: grayscale(100%);
 }
 
-.button_secondary_container {
-    align-self: flex-end;
-    padding-block: var(--space-sm);
-    width: fit-content;
-    border-bottom: 1px solid var(--color-text);
-}
-
-.button_secondary_text {letter-spacing: 1px;}
-
+/*──────────────────────────────
+  FOOTER SECTION
+──────────────────────────────*/
 .footer_cta_container {
     text-align: center;
+}
+
+.footer_cta_text {
+    font-weight: var(--font-weight-reg);
 }
 
 .footer_tagline {
     align-content: flex-end;
 }
+
 .footer_links_wrapper{
     padding-bottom: var(--space-md);
     align-content: end;
@@ -136,16 +208,19 @@ body {
 .footer_links_container {
     max-width: 100%;
     justify-content: space-between;
-    
 }
+
+.footer_link {
+    font-weight: var(--font-weight-med);
+}
+
+/*footer <P>*/
 #kern-md {
-    
     letter-spacing: 0px;
 }
 
-.logo {
-    max-width: 4rem;
-}
+
 
 /*h3 token to change min clamp from 36 to 24 or otherway around*/
-/*text weight tokens light, regular, medium and semi bold*/
+
+
