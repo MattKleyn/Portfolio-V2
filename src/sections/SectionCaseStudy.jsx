@@ -1,11 +1,10 @@
 import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link } from 'mattkleyn-component-library';
+import { Link as RouterLink } from "react-router-dom";
 import me from '../data/me.json';
 import projectArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png';
 
-function SectionCaseStudy() {
-const project = projectArray[0];
-
+function SectionCaseStudy({project}) {
     return (
         <div>
             <Section as='section' maxWidth='full' className='section_case_study'>
@@ -21,16 +20,16 @@ const project = projectArray[0];
                         <Container as='div' direction='column' maxWidth='full' className='sidebar_container'>
                             <Container as='div' direction='column' gap='xl' maxWidth='full' className='project_links_container'>
                                 {projectArray.map((project) => {
-                                    return (<Link href=''>
+                                    return (<RouterLink to={`/project/${project.key}`}>
                                         <Heading level='h5' id={project.project_title} className='project_title'>
                                             {project.project_title}
                                         </Heading>
-                                    </Link>)
+                                    </RouterLink>)
                                 })}
                             </Container>
 
                             <Container as='div' direction='column' maxWidth='full' className='return_container button_secondary_container'>
-                                <Link href='' className='button_secondary_text'>Go Back</Link>
+                                <RouterLink to="/"><Paragraph level="md" className='button_secondary_text'>Go Back</Paragraph></RouterLink>
                             </Container>
                         </Container>
                     </GridItem>

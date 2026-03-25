@@ -1,4 +1,5 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, ImageWrapper, Link, BackgroundOverlay } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, ImageWrapper, BackgroundOverlay } from 'mattkleyn-component-library';
+import { Link as RouterLink } from 'react-router-dom';
 import me from '../data/me.json';
 import projectsArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png'
@@ -25,7 +26,7 @@ function SectionWorks() {
                         const layout = layouts[index];
                         return (
                             <GridItem as='div' col={layout.column} row={layout.row}>
-                                <Link href=''>
+                                <RouterLink to={`/project/${project.key}`}>
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
                                             <ImageWrapper className='project_card_image-wrapper'>
@@ -42,7 +43,7 @@ function SectionWorks() {
                                             <Paragraph level='md' className='project_card_text'>{project.project_description}</Paragraph>
                                         </GridItem>
                                     </GridContainer>
-                                </Link>
+                                </RouterLink>
                             </GridItem>
                         )
                     })}
