@@ -1,6 +1,6 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, Link, BackgroundOverlay } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, ImageWrapper, Link, BackgroundOverlay } from 'mattkleyn-component-library';
 import me from '../data/me.json';
-import projects from '../data/projects.json';
+import projectsArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png'
 
 function SectionWorks() {
@@ -17,20 +17,20 @@ function SectionWorks() {
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(7, 1fr)' gap='lg' className='works_grid'>
                     <GridItem as='div' col='10 / span 2' row='1 / span 1'>
                         <Container as='div' direction='inline'>
-                            <Heading level='h2' >{`${me[3].heading}`}</Heading>
+                            <Heading level='h2' >{`${me[3].heading[1]}`}</Heading>
                         </Container>
                     </GridItem>
                     {/* Need to dynamically import images/vids for cards, dont forget project href */}
-                    {projects.map((project, index) => {
+                    {projectsArray.map((project, index) => {
                         const layout = layouts[index];
                         return (
                             <GridItem as='div' col={layout.column} row={layout.row}>
                                 <Link href=''>
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
-                                            <div className='project_card_image-wrapper'>
+                                            <ImageWrapper className='project_card_image-wrapper'>
                                                 <Image src={im} alt='project card image' variant='cover' className='project_card_image'/>
-                                            </div>
+                                            </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
                                             <BackgroundOverlay overlayColor='var(--color-overlay)'/>
