@@ -5,7 +5,7 @@ import im from'../assets/images/placeholder_about.jpg';
 function SectionAbout() {
     return (
         <div>
-            <Section as='section' id='about' maxWidth='full' className='section_about'>
+            <Section as='section' id='section_about' maxWidth='full' className='section_about'>
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
                     <GridItem as='div' col='7 / span 3' row='2 / span 1'>
                         <Container as='div' direction='inline' gap='md' className='about_heading_container'>

@@ -1,10 +1,12 @@
 import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link } from 'mattkleyn-component-library';
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useParams } from "react-router-dom";
 import me from '../data/me.json';
 import projectArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png';
 
 function SectionCaseStudy({project}) {
+    const { id } = useParams();
+
     return (
         <div>
             <Section as='section' maxWidth='full' className='section_case_study'>
@@ -18,10 +20,10 @@ function SectionCaseStudy({project}) {
 
                     <GridItem as='div' col='2 / span 3' row='2 / span 1' className='sidebar_wrapper'>
                         <Container as='div' direction='column' maxWidth='full' className='sidebar_container'>
-                            <Container as='div' direction='column' gap='xl' maxWidth='full' className='project_links_container'>
+                            <Container as='div' direction='column' gap='xl' maxWidth='full' className='project_links_container' >
                                 {projectArray.map((project) => {
                                     return (<RouterLink to={`/project/${project.key}`}>
-                                        <Heading level='h5' id={project.project_title} className='project_title'>
+                                        <Heading level='h5' id={project.project_title} className={project.key == id ? 'project_title--active' : 'project_title'}>
                                             {project.project_title}
                                         </Heading>
                                     </RouterLink>)

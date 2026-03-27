@@ -11,6 +11,10 @@ body {
     font-weight: 300;
 }
 
+html { 
+    scroll-behavior: smooth;
+} 
+
 /*──────────────────────────────
   NAV SECTION
 ──────────────────────────────*/
@@ -26,8 +30,13 @@ body {
 .nav_menu {
     align-items: center;
 
-    .link {
+    .button {
         font-weight: var(--font-weight-reg);
+        border: none;
+        background-color: transparent;
+        padding: 0rem;
+        font-size: var(--font-size-md);
+        line-height: calc(var(--font-size-md) * 1.6);
     }
 
     #button_secondary_text {
@@ -217,6 +226,12 @@ body {
 
 .project_title {
     color: var(--color-alt-light);
+}
+
+.project_links_container .project_title--active {
+    color: var(--color-text);
+    font-size: var(--font-size-2xl-int);
+    
 }
 
 .case_study_links_container {

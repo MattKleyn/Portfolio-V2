@@ -3,8 +3,13 @@ import Nav from "../sections/Nav";
 import SectionCaseStudy from "../sections/SectionCaseStudy";
 import { useParams } from "react-router-dom";
 import projectArray from "../data/projects.json";
+import { useEffect } from "react";
 
 function ProjectsPage() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
     const {id} = useParams();
     const project = projectArray.find( p => p.key == id);
 
