@@ -1,5 +1,4 @@
 /*
-kerning tokens
 border tokens
 
 */
@@ -10,4 +9,7 @@ border tokens
     --font-weight-reg: 400;
     --font-weight-med: 500;
     --font-weight-sb: 600;
+    --kerning-sm: -1%;
+    --kerning-md: 0%;
+    --kerning-lg: 1%;
 }

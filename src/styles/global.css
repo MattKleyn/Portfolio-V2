@@ -49,6 +49,66 @@ html {
     overflow: visible;
 }
 
+.nav_bar .nav_logo--hidden-on-scroll {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.nav_bar .nav_menu--hidden-on-scroll {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.nav_bar .nav_toggle--visible {
+    opacity: 1;
+    display: block;
+}
+
+.nav_bar .nav_toggle--hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.nav_bar .nav_overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--color-text);
+    z-index: 998;
+
+    .nav_link_overlay {
+        font-weight: var(--font-weight-reg);
+        border: none;
+        background-color: transparent;
+        padding: 0rem;
+        color: var(--color-bg);
+        font-size: var(--font-size-4xl);
+        line-height: calc(var(--font-size-3xl) * 1.6);
+        text-align: left;
+    }
+
+    .contact_overlay {
+        font-weight: var(--font-weight-reg);
+        border: none;
+        padding: 0rem;
+        color: var(--color-bg);
+        font-size: var(--font-size-4xl);
+        line-height: calc(var(--font-size-3xl) * 1.6);
+    }
+
+    .nav_links_overlay_container {
+        align-content: end;
+    }
+
+    .nav_links_container {
+        font-size: var(--font-size-lg);
+        line-height: calc(var(--font-size-lg) * 1.6);
+        color: var(--color-bg);
+    }
+}
+
 /*──────────────────────────────
   GLOBAL STYLES
 ──────────────────────────────*/
@@ -223,6 +283,24 @@ html {
     height: 90vh;
     justify-content: space-between;
 }
+
+.return_container {
+    border-bottom: 1px solid var(--color-alt-light);
+}
+
+.return_button {
+        border: none;
+        background-color: transparent;
+        padding: 0rem;
+
+        p {
+            font-weight: var(--font-weight-md); 
+            font-size: var(--font-size-lg);
+            color: var(--color-alt-dark);
+            line-height: calc(var(--font-size-lg) * 1.6);
+            letter-spacing: var(--kerning-lg);
+        }
+    }
 
 .project_title {
     color: var(--color-alt-light);

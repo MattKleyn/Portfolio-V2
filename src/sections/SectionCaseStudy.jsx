@@ -1,11 +1,12 @@
-import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link } from 'mattkleyn-component-library';
-import { Link as RouterLink, useParams } from "react-router-dom";
+import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link, Button } from 'mattkleyn-component-library';
+import { Link as RouterLink, useParams, useNavigate } from "react-router-dom";
 import me from '../data/me.json';
 import projectArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png';
 
 function SectionCaseStudy({project}) {
     const { id } = useParams();
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -31,8 +32,7 @@ function SectionCaseStudy({project}) {
                             </Container>
 
                             <Container as='div' direction='column' maxWidth='full' className='return_container button_secondary_container'>
-                                <RouterLink to="/"><Paragraph level="md" className='button_secondary_text'>Go Back</Paragraph></RouterLink>
-                            </Container>
+                                <Button as='button' onClick={() => {navigate('/', {state: {scrollTo: "section_works"}})}} className='return_button' ><Paragraph level="md" className='button_secondary_text'>Go Back</Paragraph></Button>                       </Container>
                         </Container>
                     </GridItem>
 
