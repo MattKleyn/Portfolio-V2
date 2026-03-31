@@ -72,11 +72,11 @@ html {
     display: none;
 }
 
-.nav_bar .nav_overlay {
+.nav_overlay.nav_overlay {
     position: fixed;
     inset: 0;
     background: var(--color-text);
-    z-index: 998;
+    z-index: 99999999999999999999999999999999;
 
     .nav_link_overlay {
         font-weight: var(--font-weight-reg);
@@ -103,6 +103,16 @@ html {
     }
 
     .nav_links_container {
+        font-size: var(--font-size-lg);
+        line-height: calc(var(--font-size-lg) * 1.6);
+        color: var(--color-bg);
+    }
+
+    .nav_overlay_close_container {
+        align-content: end;
+    }
+
+    .nav_close_toggle {
         font-size: var(--font-size-lg);
         line-height: calc(var(--font-size-lg) * 1.6);
         color: var(--color-bg);
@@ -282,6 +292,7 @@ html {
     top: var(--space-3xl);
     height: 90vh;
     justify-content: space-between;
+   
 }
 
 .return_container {

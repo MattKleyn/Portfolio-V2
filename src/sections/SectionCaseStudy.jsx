@@ -12,7 +12,7 @@ function SectionCaseStudy({project}) {
         <div>
             <Section as='section' maxWidth='full' className='section_case_study'>
                 <GridContainer as='div' columns='repeat(12,1fr)' rows='repeat(2,auto)' gap='lg'>
-                    <GridItem as='div' col='8 / span 5' row='1 / span 1' >
+                    <GridItem as='div' col='8 / span 5' row='1 / span 1'>
                         <Container as='div' direction='inline' gap='md' maxWidth='full' className='case_study_heading_container'>
                             <Heading level='h2' ><span class='heading_sm'>{`${me[3].heading[0]}`}</span> {`${me[3].heading[1]}`}</Heading>
                         </Container>
