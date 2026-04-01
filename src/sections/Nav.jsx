@@ -39,7 +39,7 @@ function Nav() {
                     </Container>
                 </NavMenu>
                 <NavToggle onClick={toggleMenu} className={`${isPastThreshold ? "nav_toggle--visible" : "nav_toggle--hidden"}`}>
-                    {!isMenuOpen && (<Paragraph level='md'>Open</Paragraph>)}
+                    {!isMenuOpen && (<Paragraph level='md' className='nav_toggle_text--open'>Open</Paragraph>)}
                 </NavToggle>
                 {isMenuOpen && (
                     <Portal>

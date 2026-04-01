@@ -37,10 +37,12 @@ html {
         padding: 0rem;
         font-size: var(--font-size-md);
         line-height: calc(var(--font-size-md) * 1.6);
+        color: var(--color-alt-dark);
     }
 
     #button_secondary_text {
         font-weight: var(--font-weight-reg);
+        color: var(--color-text)
     }
 }
 
@@ -64,6 +66,15 @@ html {
 .nav_bar .nav_toggle--visible {
     opacity: 1;
     display: block;
+    background-color: var(--color-text);
+    padding-inline: var(--space-md);
+    padding-block: var(--space-sm);
+}
+
+.nav_toggle_text--open.nav_toggle_text--open {
+    color: var(--color-bg);
+    font-weight: var(--font-weight-reg);
+    letter-spacing: var(--kerning-lg);
 }
 
 .nav_bar .nav_toggle--hidden {
@@ -129,16 +140,31 @@ html {
     color: var(--color-bg);
 }
 
-#button_primary_text {letter-spacing: 1px;}
+#button_primary_text {
+    letter-spacing: 1px;
+}
 
 .button_secondary_container {
-    /* align-self: flex-end; */
     padding-block: var(--space-sm);
     width: fit-content;
     border-bottom: 1px solid var(--color-text);
 }
 
-.button_secondary_text {letter-spacing: 1px;}
+.button_secondary_text {
+    letter-spacing: 1px;
+}
+
+.paragraph--sm { 
+    color: var(--color-alt-dark)
+}
+
+.paragraph--md { 
+    color: var(--color-alt-dark)
+}
+
+.paragraph--lg { 
+    color: var(--color-alt-dark)
+}
 
 /*──────────────────────────────
   HERO SECTION
@@ -151,13 +177,18 @@ html {
     height: 100vh;
 }
 
-.display-grid { display: grid; }
-.gap-lg { gap: var(--space-lg); }
+.display-grid { 
+    display: grid; 
+}
+
+.gap-lg { 
+    gap: var(--space-lg); 
+}
 
 .home_page {
     display: flex;
     flex-direction: column;
-    gap: var(--space-2xl);
+    gap: var(--space-6xl);
 }
 
 .hero_gridwrap_fullname {
@@ -187,14 +218,20 @@ html {
  /*──────────────────────────────
   TAGLINE SECTION
 ──────────────────────────────*/
-.section_tagline {
-    padding-top: var(--space-3xl);
-    padding-bottom: var(--space-5xl);
+.section_tagline.section_tagline {
+    padding-top: 0rem;
+    padding-left: 0rem;
 }
 
 .tagline_text {
     text-transform: uppercase;
     text-wrap-mode: nowrap;
+    color: var(--color-alt-light);
+}
+
+.tagline_text.tagline--lg {
+    font-size: var(--font-size-4xl);
+    opacity: 0.3;
 }
 
 /*──────────────────────────────
@@ -205,7 +242,7 @@ html {
 }
 
 .heading_sm {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
     display: inline-block;
     line-height: 1;
 }
@@ -221,7 +258,7 @@ html {
 .why_me {
     max-width: 460px;
 }
-/* why is button here? */
+
 .button_primary_container {
     padding-inline: var(--space-md);
     padding-block: var(--space-sm);
@@ -229,10 +266,28 @@ html {
     color: var(--color-bg);
 }
 
-#button_primary_text {letter-spacing: 1px;}
+#button_primary_text {
+    letter-spacing: 1px;
+    color: var(--color-bg);
+}
 
 .button_wrapper {
     justify-self: end;
+}
+
+.values_titles {
+    font-weight: var(--font-weight-reg);
+}
+
+/*──────────────────────────────
+  CAPABILITIES SECTION
+──────────────────────────────*/
+.section_build {
+    height: 100vh;
+}
+
+.build_wrapper {
+    align-content: center;
 }
 
 .heading_build {
@@ -246,6 +301,7 @@ html {
 }
 
 .build_title {
+    font-weight: var(--font-weight-reg);
     text-wrap-mode: nowrap;
     min-width: 406px;
 }
@@ -261,15 +317,33 @@ html {
     height: 100%;
 }
 
-.project_card { height: 100%; }
+.project_card { 
+    height: 100%; 
+}
 
-.project_card_heading_container { padding: var(--space-sm); display: flex; align-items: end;}
-.project_card_heading { color: var(--color-bg);}
-.project_card_text_container { padding: var(--space-sm); display: flex; justify-content: end;}
-.project_card_text { color: var(--color-bg);}
+.project_card_heading_container { 
+    padding: var(--space-sm); 
+    display: flex; 
+    align-items: end;
+}
+
+.project_card_heading { 
+    color: var(--color-bg);
+}
+
+.project_card_text_container { 
+    padding: var(--space-sm); 
+    display: flex; 
+    justify-content: end;
+}
+
+.project_card_text { 
+    color: var(--color-bg);
+}
 
 .project_card_image-wrapper {
-  height: 23.5rem; 
+  /* height: 22.5rem;  */
+  height: 100%;
 }
 /*this image is not really sorted wrt to it size, dont like the hardocoded 23.5*/
 .project_card_image { 
@@ -279,8 +353,12 @@ html {
 /*──────────────────────────────
   CASE STUDY SECTION
 ──────────────────────────────*/
+.section_case_study {
+    margin-top: var(--space-6xl);
+}
+
 .case_study_heading_container {
-    margin-bottom: var(--space-4xl);
+    margin-bottom: var(--space-xl);
 }
 
 .sidebar_wrapper {
@@ -292,7 +370,6 @@ html {
     top: var(--space-3xl);
     height: 90vh;
     justify-content: space-between;
-   
 }
 
 .return_container {

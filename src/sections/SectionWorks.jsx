@@ -6,19 +6,19 @@ import im from '../assets/images/placeholder_project_image.png'
 
 function SectionWorks() {
     const layouts = [
-            {column: '1 / span 8', row: '2 / span 3'},
-            {column: '9 / span 4', row: '2 / span 3'},
-            {column: '1 / span 4', row: '5 / span 3'},
-            {column: '5 / span 8', row: '5 / span 3'}
+            {column: '1 / span 3', row: '2 / span 5'},
+            {column: '4 / span 3', row: '2 / span 3'},
+            {column: '7 / span 3', row: '2 / span 5'},
+            {column: '10 / span 3', row: '2 / span 3'}
             ];
 
     return (
         <div>
             <Section as='section' id='section_works' maxWidth='full' className='section_works'>
-                <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(7, 1fr)' gap='lg' className='works_grid'>
-                    <GridItem as='div' col='10 / span 2' row='1 / span 1'>
+                <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='works_grid'>
+                    <GridItem as='div' col='7 / span 6' row='1 / span 1'>
                         <Container as='div' direction='inline'>
-                            <Heading level='h2' >{`${me[3].heading[1]}`}</Heading>
+                            <Heading level='h2' >{`${me[3].heading[0]}`}<span class='heading_sm'>{me[3].heading[1]}</span></Heading>
                         </Container>
                     </GridItem>
                     {/* Need to dynamically import images/vids for cards, dont forget project href */}

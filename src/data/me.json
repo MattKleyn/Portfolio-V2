@@ -14,7 +14,7 @@
 
   {
     "section": "value_proposition",
-    "heading": ["How", "I build"],
+    "heading": ["How", "I Build"],
     "problem": "With the rise of AI‑generated solutions, many digital products are built hastily and without direction. They often share the same generic look, hide structural flaws, and lack the maintainability and extensibility that real businesses require. What seems fast and convenient initially, becomes a long‑term liability — a black‑box system that’s hard to understand, harder to scale, and expensive to fix.",
     "solution": "Solving this requires more than tools. It requires human judgment, full system understanding, and deliberate design — someone who can leverage AI where it helps, avoid its weaknesses, and build systems with clarity, structure, and long‑term quality in mind.",
     "why_me": "My management background gives me experience with planning, sequencing, constraints, and delivering work under real‑world conditions — skills I bring directly into software development.",
@@ -30,12 +30,12 @@
 
   {
     "section": "works",
-    "heading": ["collection of", "Works"]
+    "heading": ["Works ", "collection"]
   },
 
   {
     "section": "capabilities",
-    "heading": ["What I", "Build"],
+    "heading": ["What", "I Build"],
     "items": {
       "Websites and frontend interfaces": "I design and build clean, component‑driven interfaces — from simple static sites to dynamic React applications. Every interface is structured, accessible, and supported by thoughtful motion design that guides attention without overwhelming it.",
       "Backend systems": "I build Python‑powered backend systems and ETL pipelines that handle data reliably and scale with your needs.",
