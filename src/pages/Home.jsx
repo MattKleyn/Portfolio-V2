@@ -10,10 +10,13 @@ import ReadMoreModal from "../sections/ReadMoreModal";
 import {useEffect} from "react";
 import {useLocation} from "react-router-dom";
 import useModalController from "../utils/useModalController";
+import ContactMeModal from "../sections/ContactMeModal";
+import useContactController from "../sections/useContactController";
 
 function HomePage() {
     const location = useLocation();
     const {isModalOpen, toggleModal} = useModalController();
+    const {isOpen, toggleContactModal} = useContactController();
 
     useEffect(() => {
         if (location.state?.scrollTo) {
@@ -26,15 +29,16 @@ function HomePage() {
 
     return (
         <div className="home_page">
-            <Nav />
+            <ContactMeModal isOpen={isOpen} toggleContactModal={toggleContactModal}/>
+            <Nav isOpen={isOpen} toggleContactModal={toggleContactModal}/>
             <HeroSection />
             <SectionTagline />
-            <SectionValueProposition />
+            <SectionValueProposition isOpen={isOpen} toggleContactModal={toggleContactModal} />
             <SectionWorks />
             <SectionBuild />
             <SectionAbout isModalOpen={isModalOpen} toggleModal={toggleModal} />
             <ReadMoreModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
-            <Footer />
+            <Footer isOpen={isOpen} toggleContactModal={toggleContactModal} />
         </div>
     )
 }

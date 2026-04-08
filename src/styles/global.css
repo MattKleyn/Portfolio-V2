@@ -34,19 +34,22 @@ html {
     height: 100%;
     margin-block: var(--space-md);
 
-    .button {
+    .nav_link {
         font-weight: var(--font-weight-reg);
         border: none;
         background-color: transparent;
-        padding: 0rem;
+        padding-top: var(--space-sm);
         font-size: var(--font-size-md);
         line-height: calc(var(--font-size-md) * 1.6);
         color: var(--color-alt-dark);
     }
 
-    #button_secondary_text {
+    .nav_contact_text {
+        text-wrap-mode: nowrap;
         font-weight: var(--font-weight-reg);
-        color: var(--color-text)
+        letter-spacing: var(--kerning-lg);
+        color: var(--color-alt-dark);
+        text-transform: capitalize;
     }
 }
 
@@ -149,18 +152,27 @@ html {
     color: var(--color-bg);
 }
 
-#button_primary_text {
+.button_primary_text.button_primary_text {
     letter-spacing: 1px;
+    color: var(--color-bg);
 }
 
 .button_secondary_container {
     padding-block: var(--space-sm);
+    padding-inline: 0px;
     width: fit-content;
+    border: none;
     border-bottom: 1px solid var(--color-text);
+    background-color: transparent;
 }
 
-.button_secondary_text {
-    letter-spacing: 1px;
+.button_secondary_text.button_secondary_text {
+    letter-spacing: var(--kerning-lg);
+    font-size: var(--font-size-lg);
+    line-height: calc(var(--font-size-md) * 1.6);
+    font-weight: var(--font-weight-reg);
+    color: var(--color-alt-dark);
+    text-wrap-mode: nowrap;
 }
 
 .paragraph--sm { 
@@ -190,6 +202,45 @@ html {
 .modal_content_container {
     global styles
 } */
+
+/*──────────────────────────────
+  CONTACT MODAL
+──────────────────────────────*/
+.contact_modal_wrapper.contact_modal_wrapper {
+    justify-content: flex-end;
+
+    .contact_modal_grid {
+        height: 100vh;
+        width: 600px;
+        max-width: 90vw;
+        max-height: 90vh;
+        background-color: var(--color-text);
+    }
+}
+
+.contact_me_modal_heading.contact_me_modal_heading {
+    color: var(--color-bg);
+    font-weight: var(--font-weight-reg);
+    letter-spacing: var(--kerning-lg);
+    text-transform: capitalize;
+}
+
+.contact_me_modal_text.contact_me_modal_text {
+    color: rgba(255,255,255,0.8);
+}
+
+.contact_me_modal_link {
+    color: var(--color-bg);
+    font-size: var(--font-size-lg);
+}
+
+.button_container--ghost--dark {
+    border: 1px solid var(--color-bg);
+    padding-inline: var(--space-md);
+    padding-block: var(--space-sm);
+    background-color: transparent;
+    color: var(--color-bg);
+}
 
 /*──────────────────────────────
   HERO SECTION
@@ -281,18 +332,6 @@ html {
     max-width: 460px;
 }
 
-.button_primary_container {
-    padding-inline: var(--space-md);
-    padding-block: var(--space-sm);
-    background-color: var(--color-text);
-    color: var(--color-bg);
-}
-
-#button_primary_text {
-    letter-spacing: 1px;
-    color: var(--color-bg);
-}
-
 .button_wrapper {
     justify-self: end;
 }
@@ -364,10 +403,9 @@ html {
 }
 
 .project_card_image-wrapper {
-  /* height: 22.5rem;  */
   height: 100%;
 }
-/*this image is not really sorted wrt to it size, dont like the hardocoded 23.5*/
+
 .project_card_image { 
     width: 100%;
 }
@@ -442,10 +480,6 @@ html {
     height: 100%;
 }
 
-.about_image { 
-    filter: grayscale(100%); 
-}
-
 .about_button_wrapper {
     justify-content: end;
 
@@ -458,14 +492,7 @@ html {
         background-color: transparent;
         padding-inline: 0rem;
         
-    }
-
-    #button_secondary_text {
-        font-size: var(--font-size-lg);
-        line-height: calc(var(--font-size-md) * 1.6);
-        font-weight: var(--font-weight-reg);
-        color: var(--color-alt-dark);
-    }
+    }    
 }
 
 .about_modal {

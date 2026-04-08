@@ -1,7 +1,7 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Button } from 'mattkleyn-component-library';
 import me from '../data/me.json';
 
-function SectionValueProposition () {
+function SectionValueProposition ({isOpen, toggleContactModal}) {
     return (
         <div>
             <Section as='section' className='section_value_proposition' maxWidth='full'>
@@ -29,9 +29,9 @@ function SectionValueProposition () {
                         </Container>
                     </GridItem>
                     <GridItem as='div' col='9 / span 2' row='9 / span 1' className='button_wrapper' >
-                            <Container as='div' direction='inline' className='button_primary_container'>
-                                <Paragraph level='lg' id='button_primary_text'>Get in touch</Paragraph>
-                            </Container>
+                        <Button className='button_primary_container' onClick={toggleContactModal}>
+                            <Paragraph level='lg' className='button_primary_text'>Get in touch</Paragraph>
+                        </Button>
                     </GridItem>
                 </GridContainer>
             </Section>

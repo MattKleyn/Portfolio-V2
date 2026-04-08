@@ -4,8 +4,11 @@ import SectionCaseStudy from "../sections/SectionCaseStudy";
 import { useParams } from "react-router-dom";
 import projectArray from "../data/projects.json";
 import { useEffect } from "react";
+import ContactMeModal from "../sections/ContactMeModal";
+import useContactController from "../sections/useContactController";
 
 function ProjectsPage() {
+    const {isOpen, toggleContactModal} = useContactController();
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
@@ -15,9 +18,10 @@ function ProjectsPage() {
 
     return (
         <div className="projects_page">
-            <Nav />
+            <ContactMeModal isOpen={isOpen} toggleContactModal={toggleContactModal}/>
+            <Nav isOpen={isOpen} toggleContactModal={toggleContactModal}/>
             <SectionCaseStudy project={project}/>
-            <Footer />
+            <Footer isOpen={isOpen} toggleContactModal={toggleContactModal}/>
         </div>
     )
 }

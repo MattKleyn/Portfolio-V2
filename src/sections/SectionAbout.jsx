@@ -24,7 +24,7 @@ function SectionAbout({isModalOpen, toggleModal}) {
                             <Paragraph level='md'>{`${me[5].summary}`}</Paragraph>
                             <Container as='div'direction='row' maxWidth='full' className='about_button_wrapper'>
                                 <Button className='button_secondary_container' onClick={toggleModal}>
-                                    <Paragraph level='lg' id='button_secondary_text'>Read more</Paragraph>
+                                    <Paragraph level='lg' className='button_secondary_text'>Read more</Paragraph>
                                 </Button>
                             </Container>
                         </Container>

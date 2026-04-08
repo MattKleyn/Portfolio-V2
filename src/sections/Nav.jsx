@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useNavController from "../utils/useNavController";
 import me from '../data/me.json';
 
-function Nav() {
+function Nav({isOpen, toggleContactModal}) {
     const navigate = useNavigate();
 
     const {
@@ -36,9 +36,9 @@ function Nav() {
                     <Button as="button" onClick={() => goToSection("section_works")} className='nav_link'>Works</Button>
                     <Button as="button" onClick={() => goToSection("section_build")} className='nav_link'>Capabilities</Button>
                     <Button as="button" onClick={() => goToSection("section_about")} className='nav_link'>About</Button>
-                    <Container as='div' direction='inline' className='button_secondary_container'>
-                        <Paragraph level='md' id='button_secondary_text'>Contact Me</Paragraph>
-                    </Container>
+                    <Button as="button" className='button_secondary_container' onClick={toggleContactModal}>
+                        <Paragraph level='md' className='nav_link nav_contact_text'>Get in touch</Paragraph>
+                    </Button>
                 </NavMenu>
                 <NavToggle onClick={toggleMenu} className={`${isPastThreshold ? "nav_toggle--visible" : "nav_toggle--hidden"}`}>
                     {!isMenuOpen && (<Paragraph level='md' className='nav_toggle_text--open'>Menu</Paragraph>)}
@@ -56,9 +56,9 @@ function Nav() {
                                         <Button as="button" onClick={() => goToSection("section_works")} className='nav_link_overlay'>Works</Button>
                                         <Button as="button" onClick={() => goToSection("section_build")} className='nav_link_overlay'>Capabilities</Button>
                                         <Button as="button" onClick={() => goToSection("section_about")} className='nav_link_overlay'>About</Button>
-                                        <Container as='div' direction='inline' className='contact_overlay button_secondary_container'>
-                                            <Paragraph level='md' id='button_secondary_text' className='contact_overlay'>Contact Me</Paragraph>
-                                        </Container>
+                                        <Button as="button" className='button_secondary_container contact_overlay' onClick={toggleContactModal}>
+                                            <Paragraph level='md' className='contact_overlay nav_contact_text'>Get in touch</Paragraph>
+                                        </Button>
                                     </NavMenu>
                                 </GridItem>
                                 <GridItem as='div' col='3 / span 1' row='1 / span 1' >
