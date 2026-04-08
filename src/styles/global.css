@@ -25,10 +25,14 @@ html {
 .nav_bar {
     width: 1200px;
     justify-content: space-between;
+    height: 100%;
+    overflow: visible;
 }
 
 .nav_menu {
     align-items: center;
+    height: 100%;
+    margin-block: var(--space-md);
 
     .button {
         font-weight: var(--font-weight-reg);
@@ -46,9 +50,14 @@ html {
     }
 }
 
+.nav_logo_wrapper.nav_logo_wrapper {
+    margin-block: auto;
+    height:3rem;
+    overflow: visible;
+}
+
 .logo {
     max-width: 3rem;
-    overflow: visible;
 }
 
 .nav_bar .nav_logo--hidden-on-scroll {
@@ -166,6 +175,22 @@ html {
     color: var(--color-alt-dark)
 }
 
+.modal--closed {
+    display: none;
+}
+
+.modal--open {
+    display: block;
+}
+
+/* .modal_backdrop {
+    global styles
+}
+
+.modal_content_container {
+    global styles
+} */
+
 /*──────────────────────────────
   HERO SECTION
 ──────────────────────────────*/
@@ -204,14 +229,11 @@ html {
 }
 
 .hero_image_container {
-    overflow: hidden;
-    max-height: 100%;
     background-color: #FAFAFA;
 }
 
 .hero_image { 
     width: 100%;
-    /*dont forget fix this image positioning*/
     height: 100%;
  }
 
@@ -409,25 +431,95 @@ html {
     padding-inline: var(--space-2xl);
 }
 
-
-
-
 /*──────────────────────────────
   ABOUT SECTION
 ──────────────────────────────*/
-.about_image {
-    filter: grayscale(100%);
+.section_about {
+    height: 100vh;
+}
+
+.about_grid {
+    height: 100%;
+}
+
+.about_image { 
+    filter: grayscale(100%); 
+}
+
+.about_button_wrapper {
+    justify-content: end;
+
+    .button {
+        justify-self: end;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid var(--color-alt-dark);
+        background-color: transparent;
+        padding-inline: 0rem;
+        
+    }
+
+    #button_secondary_text {
+        font-size: var(--font-size-lg);
+        line-height: calc(var(--font-size-md) * 1.6);
+        font-weight: var(--font-weight-reg);
+        color: var(--color-alt-dark);
+    }
+}
+
+.about_modal {
+    .modal_content_container {
+        height: 100%;
+        width: 1200px;
+        max-width: 90vw;
+        max-height: 90vh;
+    } 
+}
+
+.about_me_modal_button_wrapper {
+    align-content: end;
+
+    .about_me_modal_button {
+        width: 100%;
+    }
+
+    .button_primary_text {
+        color: var(--color-bg);
+        letter-spacing: 1px;
+    }
+}
+
+.about_me_modal_grid_container {
+    height: 100%;
 }
 
 /*──────────────────────────────
   FOOTER SECTION
 ──────────────────────────────*/
+.section_footer {
+    height: 100vh;
+}
+
 .footer_cta_container {
     text-align: center;
 }
 
 .footer_cta_text {
     font-weight: var(--font-weight-reg);
+}
+
+.footer_content_wrapper {
+    height: 100%;
+}
+
+/* .footer_portrait_wrapper {
+    height: auto; 
+} */
+
+.footer_main_text.footer_main_text {
+    max-width: 50%;
+    letter-spacing: var(--kerning-lg);
 }
 
 .footer_tagline {
@@ -447,14 +539,5 @@ html {
 .footer_link {
     font-weight: var(--font-weight-med);
 }
-
-/*footer <P>*/
-#kern-md {
-    letter-spacing: 0px;
-}
-
-
-
-/*h3 token to change min clamp from 36 to 24 or otherway around*/
 
 

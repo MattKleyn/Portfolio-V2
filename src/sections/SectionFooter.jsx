@@ -1,11 +1,11 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, Link } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, ImageWrapper, Image, Link } from 'mattkleyn-component-library';
 import me from '../data/me.json';
 import im from'../assets/images/placeholder_hero_image.png';
 
 function Footer() {
     return (
         <footer>
-            <Section as='section' maxWidth='full'>
+            <Section as='section' maxWidth='full' className='section_footer'>
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
                     <GridItem as='div' col='4 / span 6' row='2 / span 1' >
                         <Container as='div' direction='inline' maxWidth='full' className='footer_cta_container'>
@@ -17,10 +17,12 @@ function Footer() {
                             <Paragraph level='lg' id='button_primary_text'>Read more</Paragraph>
                         </Container>
                     </GridItem>
-                    <GridItem as='div' col='2 / span 4' row='4 / span 2' >
+                    <GridItem as='div' col='2 / span 4' row='4 / span 2' className='footer_content_wrapper'>
                         <Container as='div' direction='row' gap='xl' maxWidth='full'>
-                            <Image src={im} alt='a more serious headshot' variant='cover' width='240'/>
-                            <Paragraph level='sm' id='kern-md'>{`${me[6].bio}`}</Paragraph>
+                            <ImageWrapper className='footer_portrait_wrapper'>
+                                <Image src={im} alt='a more serious headshot' variant='cover' width='240'/>
+                            </ImageWrapper>
+                            <Paragraph level='sm' id='kern-md' className='footer_main_text'>{`${me[6].bio}`}</Paragraph>
                         </Container>
                     </GridItem>
                     <GridItem as='div' col='9 / span 4' row='5 / span 1' className='footer_tagline'>

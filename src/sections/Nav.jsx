@@ -1,4 +1,4 @@
-import { NavRoot, NavBar, NavMenu, Image, Container, Paragraph, Button, NavToggle, NavOverlay, GridContainer, GridItem, Link, Portal } from 'mattkleyn-component-library';
+import { NavRoot, NavBar, NavMenu, Image, Container, Paragraph, Button, NavToggle, NavOverlay, GridContainer, GridItem, Link, Portal, ImageWrapper } from 'mattkleyn-component-library';
 import Logo from '../assets/images/placeholder_logo.svg';
 import { useNavigate } from "react-router-dom";
 import useNavController from "../utils/useNavController";
@@ -23,11 +23,13 @@ function Nav() {
 
     return(
         <NavRoot position='fixed' offsetTop='0rem' className='nav_root'>
-            <NavBar direction='row' dock={`${isPastThreshold ? "left" : "none"}`} padding='md' maxWidth='md' className='nav_bar'>
-                <Image src={Logo} alt='placeholder brand logo'variant='cover' 
-                className={`logo 
-                ${isPastThreshold ? "nav_logo--hidden-on-scroll" : ""}`}/>
-                <NavMenu direction='row' padding='sm' 
+            <NavBar direction='row' dock={`${isPastThreshold ? "left" : "none"}`} padding='none' maxWidth='md' className='nav_bar'>
+                <ImageWrapper className='nav_logo_wrapper'>
+                    <Image src={Logo} alt='placeholder brand logo'variant='cover' 
+                        className={`logo 
+                        ${isPastThreshold ? "nav_logo--hidden-on-scroll" : ""}`}/>
+                </ImageWrapper>
+                <NavMenu direction='row' padding='none' 
                 className={`nav_menu 
                 ${isPastThreshold ? "nav_menu--hidden-on-scroll" : ""}`}>
                     <Button as="button" onClick={() => goToSection("section_hero")} className='nav_link'>Home</Button>
@@ -39,13 +41,13 @@ function Nav() {
                     </Container>
                 </NavMenu>
                 <NavToggle onClick={toggleMenu} className={`${isPastThreshold ? "nav_toggle--visible" : "nav_toggle--hidden"}`}>
-                    {!isMenuOpen && (<Paragraph level='md' className='nav_toggle_text--open'>Open</Paragraph>)}
+                    {!isMenuOpen && (<Paragraph level='md' className='nav_toggle_text--open'>Menu</Paragraph>)}
                 </NavToggle>
                 {isMenuOpen && (
                     <Portal>
                         <NavOverlay onClick={closeMenu} className='nav_overlay'>
                             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
-                                <GridItem onClick={toggleMenu} as='div' col='11 / span 1' row='1 / span 1' className='nav_overlay_close_container'>
+                                <GridItem onClick={toggleMenu} as='div' col='10 / span 1' row='1 / span 1' className='nav_overlay_close_container'>
                                     {isMenuOpen && (<Paragraph level='md' className='nav_close_toggle'>Close</Paragraph>)}
                                 </GridItem>
                                 <GridItem as='div' col='3 / span 3' row='3 / span 4' className='nav_menu_overlay_container' >
@@ -60,9 +62,11 @@ function Nav() {
                                     </NavMenu>
                                 </GridItem>
                                 <GridItem as='div' col='3 / span 1' row='1 / span 1' >
-                                    <Image src={Logo} alt='Brand Logo inverted' className='nav_menu_overlay_logo'/>
+                                    <ImageWrapper>
+                                        <Image src={Logo} alt='Brand Logo inverted' className='nav_menu_overlay_logo'/>
+                                    </ImageWrapper>
                                 </GridItem>
-                                <GridItem as='div' col='11 / span 1' row='4 / span 2' className='nav_links_overlay_container'>
+                                <GridItem as='div' col='10 / span 1' row='4 / span 2' className='nav_links_overlay_container'>
                                     <Container as='div' direction='column' maxWidth='full' className='nav_links_container'>
                                         {Object.entries(me[6].links).map(([name, link]) => (
                                             <Link href={link} target='_blank' className='nav_link'>{name}</Link>

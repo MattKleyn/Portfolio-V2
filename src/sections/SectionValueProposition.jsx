@@ -14,7 +14,7 @@ function SectionValueProposition () {
                     </GridItem>
                     <GridItem as='div' col='2 / span 4' row='4 / span 2'>
                         <Container as='div' direction='column' gap='sm' maxWidth='full'>
-                            <Heading level='h2' >{`${me[2].heading[0]}`}<span class='heading_sm'>{`${me[2].heading[1]}`}</span></Heading>
+                            <Heading level='h2' >{`${me[2].heading[0]}`}<span className='heading_sm'>{`${me[2].heading[1]}`}</span></Heading>
                             <Paragraph level='md' className='why_me' >{`${me[2].why_me}`}</Paragraph>
                         </Container>
                     </GridItem>

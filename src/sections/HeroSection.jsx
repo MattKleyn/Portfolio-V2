@@ -1,4 +1,4 @@
-import { Heading, Paragraph, Link, Image, Section, Container, GridContainer, GridItem } from 'mattkleyn-component-library';
+import { Heading, Paragraph, Link, ImageWrapper, Image, Section, Container, GridContainer, GridItem } from 'mattkleyn-component-library';
 import me from '../data/me.json';
 import heroImage from '../assets/images/placeholder_hero_image.png';
 import linkedinIcon from '../assets/icons/icon_linkedin.svg';
@@ -10,9 +10,9 @@ function HeroSection() {
         <Section as='section' id='section_hero' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
-                    <Container as='div' maxWidth='full' className='hero_image_container'>
-                        <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image'/>
-                    </Container>
+                <ImageWrapper className='hero_image_container'>
+                    <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image'/>
+                </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>
                     <Container as='div' direction='column' gap='xl' className='hero_content'>

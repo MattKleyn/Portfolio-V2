@@ -6,11 +6,14 @@ import SectionBuild from "../sections/SectionBuild";
 import SectionAbout from "../sections/SectionAbout";
 import Footer from "../sections/SectionFooter";
 import Nav from "../sections/Nav";
+import ReadMoreModal from "../sections/ReadMoreModal";
 import {useEffect} from "react";
 import {useLocation} from "react-router-dom";
+import useModalController from "../utils/useModalController";
 
 function HomePage() {
     const location = useLocation();
+    const {isModalOpen, toggleModal} = useModalController();
 
     useEffect(() => {
         if (location.state?.scrollTo) {
@@ -29,7 +32,8 @@ function HomePage() {
             <SectionValueProposition />
             <SectionWorks />
             <SectionBuild />
-            <SectionAbout />
+            <SectionAbout isModalOpen={isModalOpen} toggleModal={toggleModal} />
+            <ReadMoreModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
             <Footer />
         </div>
     )

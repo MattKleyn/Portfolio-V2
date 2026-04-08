@@ -49,7 +49,17 @@
     "section": "about",
     "heading": "About",
     "subHeading": "Why I transitioned into tech",
-    "summary": "In a personal capacity, something short — a quick hi from me as a person. You can read more about my backstory and journey through the link."
+    "summary": "In a personal capacity, something short — a quick hi from me as a person. You can read more about my backstory and journey through the link.",
+    "bio": [
+      { 
+        "bodyHeading": "I was born at a young age",
+        "paragraph": "blah blah blah"
+      },
+      { 
+        "bodyHeading": "When I went to your learning institutional facitlities",
+        "paragraph": "how can you say that I'M crazy!"
+      }
+    ]
   },
 
   {
