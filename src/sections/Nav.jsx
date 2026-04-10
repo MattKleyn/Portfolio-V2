@@ -23,11 +23,10 @@ function Nav({isOpen, toggleContactModal}) {
 
     return(
         <NavRoot position='fixed' offsetTop='0rem' className='nav_root'>
-            <NavBar direction='row' dock={`${isPastThreshold ? "left" : "none"}`} padding='none' maxWidth='md' className='nav_bar'>
-                <ImageWrapper className='nav_logo_wrapper'>
+            <NavBar direction='row' dock={`${isPastThreshold ? "right" : "none"}`} padding='none' maxWidth='md' className='nav_bar'>
+                <ImageWrapper className={`nav_logo_wrapper ${isPastThreshold ? "nav_logo--hidden-on-scroll" : ""}`}>
                     <Image src={Logo} alt='placeholder brand logo'variant='cover' 
-                        className={`logo 
-                        ${isPastThreshold ? "nav_logo--hidden-on-scroll" : ""}`}/>
+                        className='logo'/>
                 </ImageWrapper>
                 <NavMenu direction='row' padding='none' 
                 className={`nav_menu 
@@ -41,7 +40,7 @@ function Nav({isOpen, toggleContactModal}) {
                     </Button>
                 </NavMenu>
                 <NavToggle onClick={toggleMenu} className={`${isPastThreshold ? "nav_toggle--visible" : "nav_toggle--hidden"}`}>
-                    {!isMenuOpen && (<Paragraph level='md' className='nav_toggle_text--open'>Menu</Paragraph>)}
+                    <Paragraph level='md' className='nav_toggle_text--open'>Menu</Paragraph>
                 </NavToggle>
                 {isMenuOpen && (
                     <Portal>

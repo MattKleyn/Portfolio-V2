@@ -18,7 +18,7 @@ function Footer({isOpen, toggleContactModal}) {
                         </Button>
                     </GridItem>
                     <GridItem as='div' col='2 / span 4' row='4 / span 2' className='footer_content_wrapper'>
-                        <Container as='div' direction='row' gap='xl' maxWidth='full'>
+                        <Container as='div' direction='row' gap='xl' maxWidth='full' className='footer_image_container'>
                             <ImageWrapper className='footer_portrait_wrapper'>
                                 <Image src={im} alt='a more serious headshot' variant='cover' width='240'/>
                             </ImageWrapper>

@@ -76,17 +76,20 @@ html {
 }
 
 .nav_bar .nav_toggle--visible {
-    opacity: 1;
-    display: block;
+    border: none;
+    box-sizing: border-box;
     background-color: var(--color-text);
     padding-inline: var(--space-md);
     padding-block: var(--space-sm);
+    /* fixed button height, otherwise collapses, content renders as 0px */
+    min-height: 2.5rem;
 }
 
-.nav_toggle_text--open.nav_toggle_text--open {
+.nav_bar .nav_toggle--visible .nav_toggle_text--open {
+    display: inline-block;
     color: var(--color-bg);
-    font-weight: var(--font-weight-reg);
     letter-spacing: var(--kerning-lg);
+    text-transform: uppercase;
 }
 
 .nav_bar .nav_toggle--hidden {
@@ -540,9 +543,9 @@ html {
     height: 100%;
 }
 
-/* .footer_portrait_wrapper {
-    height: auto; 
-} */
+.footer_image_container {
+    height: 100%;
+}
 
 .footer_main_text.footer_main_text {
     max-width: 50%;
