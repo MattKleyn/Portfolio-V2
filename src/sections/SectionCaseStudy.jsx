@@ -1,8 +1,8 @@
 import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link, Button } from 'mattkleyn-component-library';
+import CaseStudyCoordinator from '../components/CaseStudyCoordinator';
 import { Link as RouterLink, useParams, useNavigate } from "react-router-dom";
 import me from '../data/me.json';
 import projectArray from '../data/projects.json';
-import im from '../assets/images/placeholder_project_image.png';
 
 function SectionCaseStudy({project}) {
     const { id } = useParams();
@@ -38,32 +38,7 @@ function SectionCaseStudy({project}) {
 
 
                     <GridItem as='div' col='5 / span 5' row='2 / span 1' >
-                        <Container as='div' direction='column' gap='4xl' maxWidth='full' className='case_study_container'>
-                            <Container as='div' direction='row' gap='lg' maxWidth='full'>
-                                <ImageWrapper className='case_study_image_wrapper'>
-                                    <Image src={im} alt='hero image of the project' className='case_study_hero_image'/>
-                                </ImageWrapper>
-                                <Container as='div' direction='column' gap='md' maxWidth='full' className='case_study_links_container'>
-                                    {project.project_links.map((link, index) => {
-                                        return (
-                                        <Link key={index} href={link.url}>
-                                            <Paragraph level='md'>
-                                                {link.type}
-                                            </Paragraph>
-                                        </Link>)
-                                    })}
-                                </Container>
-                            </Container>
-
-                            {project.case_study.map((section, index) => {
-                                return (
-                                    <Container key={index} as='div' direction='column' gap='md' maxWidth='full' className='case_study_content_container'>
-                                        <Heading level='h4'>{section.heading}</Heading>
-                                        <Paragraph level='md'>{section.body}</Paragraph>
-                                    </Container>
-                                )
-                            })}
-                        </Container>
+                        <CaseStudyCoordinator project={project}></CaseStudyCoordinator>
                     </GridItem>
                 </GridContainer>
             </Section>

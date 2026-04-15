@@ -21,7 +21,7 @@ function SectionWorks() {
                             <Heading level='h2' >{`${me[3].heading[0]}`}<span class='heading_sm'>{me[3].heading[1]}</span></Heading>
                         </Container>
                     </GridItem>
-                    {/* Need to dynamically import images/vids for cards, dont forget project href */}
+            
                     {projectsArray.map((project, index) => {
                         const layout = layouts[index];
                         return (
@@ -30,7 +30,7 @@ function SectionWorks() {
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
                                             <ImageWrapper className='project_card_image-wrapper'>
-                                                <Image src={im} alt='project card image' variant='cover' className='project_card_image'/>
+                                                <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} variant='cover' className='project_card_image'/>
                                             </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>

@@ -1,10 +1,52 @@
 [{
-    "key": "project1",
-    "project_title": "Project 1",
-    "project_description": "Project Description for cards on hover",
+    "key": "matt_kleyn_component_library",
+    "is_featured": true,
+    "project_title": "MattKleyn React Component Library",
+    "project_description": "A lightweight, un-opinionated, context-agnostic React.js component library composed of expected element and layout primitives. This library is open source and being worked on, with the intention to create a component library that offers a decent amount of flexibility, reusability, and expected behaviours. There are many component libraries out there, but this library helps to reduce dependencies on external libraries and projects that could otherwise result in potential crashes on updates or unexpected layout or behaviour changes.",
     "media": {
-        "project_image": "URL or path to project image",
-        "project_video": "URL or path to project video"
+        "images": [
+            {"type": "hero", "url": "/images/portfolio_hero_image.png", "alt_text": "react alt text"}
+        ],
+        "videos": [
+            {"type": "process", "url": "URL or path to project image"}
+        ]
+    },
+    "project_links": [
+        {"type": "github", "url": "link1"},
+        {"type": "linkedin", "url": "link2"},
+        {"type": "live", "url": "link3"}
+    ],
+    "case_study": [
+    {"heading": "Project objective",
+    "body": "contentdgm"},
+    {"heading": "Background information",
+    "body": "contentsmh"},
+    {"heading": "Project challenges and requirements",
+    "body": "content"},
+    {"heading": "Architecture and system design",
+    "body": "content"},
+    {"heading": "UX/UI considerations",
+    "body": "contentsm"},
+    {"heading": "Results",
+    "body": "content"},
+    {"heading": "Lessons learned and future recommendations",
+    "body": "content"},
+    {"heading": "Conclusion",
+    "body": "content"}
+    ]
+},
+{
+    "key": "jose",
+    "is_featured": true,
+    "project_title": "JoSe: Job Search Automatron",
+    "project_description": "A Python based ETL pipeline that extracts and persists job postings from online job posting sites. A multi-phased rollout that is currently in the MVP phase, featuring a CLI UI, data persistence, and a single web scraper pipeline.  Later iterations will include LLM API calls to make use of semantic extraction, filtering, and data normalization. Further additions include a Python Flask web UI with user profiles and authentication, multi site extraction,  email digest,  automated job application workflows, and potential upskilling recommendations.",
+    "media": {
+        "images": [
+            {"type": "hero", "url": "/images/JoSe hero.png", "alt_text": "jose alt text"}
+        ],
+        "videos": [
+            {"type": "process", "url": "URL or path to project image"}
+        ]
     },
     "project_links": [
         {"type": "github", "url": "link1"},
@@ -16,6 +58,43 @@
     "body": "content"},
     {"heading": "Background information",
     "body": "content"},
+    {"heading": "Project challenges and requirements",
+    "body": "contesymysymnt"},
+    {"heading": "Architecture and system design",
+    "body": "contemsmtymnt"},
+    {"heading": "UX/UI considerations",
+    "body": "content"},
+    {"heading": "Results",
+    "body": "content"},
+    {"heading": "Lessons learned and future recommendations",
+    "body": "content"},
+    {"heading": "Conclusion",
+    "body": "content"}
+    ]
+},
+{
+    "key": "webflow_replica_sites",
+    "is_featured": true,
+    "project_title": "Webflow Replica Sites",
+    "project_description": "A series of experiments in a collaborative setting to replicate existing websites using Webflow – a no/low code web builder tool. The premise was to replicate existing sites to focus on technical implementation across various philosophies, namely a standard approach, Finsweets Clients-First Framework, and Lumos. The replicas include the site layouts, responsive layouts, motion design, and CMS integration where applicable. In total four replica sites were created across a span of 6 to 7 months.",
+    "media": {
+        "images": [
+            {"type": "hero", "url": "/images/Solvance_hero_image.png", "alt_text": "solv alt text"}
+        ],
+        "videos": [
+            {"type": "process", "url": "URL or path to project image"}
+        ]
+    },
+    "project_links": [
+        {"type": "github", "url": "link1"},
+        {"type": "linkedin", "url": "link2"},
+        {"type": "live", "url": "link3"}
+    ],
+    "case_study": [
+    {"heading": "Project objective",
+    "body": "contetktyktnt"},
+    {"heading": "Background information",
+    "body": "conttykstyksksent"},
     {"heading": "Project challenges and requirements",
     "body": "content"},
     {"heading": "Architecture and system design",
@@ -31,12 +110,17 @@
     ]
 },
 {
-    "key": "project2",
-    "project_title": "Project 2",
-    "project_description": "Project 2 Description for cards on hover",
+    "key": "dev_frog_blog",
+    "is_featured": true,
+    "project_title": "Dev Frog Blog",
+    "project_description": "The Dev Frog Blog is a multi-user blog platform where users can view various posts, create their own blog posts, and edit their own posts as required. Posts are categorized by the creator, making it easy to find and connect with related ideas and domains. The visual layout is reminiscent of a newspaper, with a large image ‘above-the-fold’ and text content organized into a columnar layout, the Dev Frog Blog brings bridges the gap between traditional editorial experience and more modern digital experiences.",
     "media": {
-        "project_image": "URL or path to project image",
-        "project_video": "URL or path to project video"
+        "images": [
+            {"type": "hero", "url": "/images/Blog_hero_concept.png", "alt_text": "frogalt text"}
+        ],
+        "videos": [
+            {"type": "process", "url": "URL or path to project image"}
+        ]
     },
     "project_links": [
         {"type": "github", "url": "link1"},
@@ -45,73 +129,9 @@
     ],
     "case_study": [
     {"heading": "Project objective",
-    "body": "content"},
+    "body": "conteilyiliyrnt"},
     {"heading": "Background information",
-    "body": "content"},
-    {"heading": "Project challenges and requirements",
-    "body": "content"},
-    {"heading": "Architecture and system design",
-    "body": "content"},
-    {"heading": "UX/UI considerations",
-    "body": "content"},
-    {"heading": "Results",
-    "body": "content"},
-    {"heading": "Lessons learned and future recommendations",
-    "body": "content"},
-    {"heading": "Conclusion",
-    "body": "content"}
-    ]
-},
-{
-    "key": "project3",
-    "project_title": "Project 3",
-    "project_description": "Project 3 Description for cards on hover",
-    "media": {
-        "project_image": "URL or path to project image",
-        "project_video": "URL or path to project video"
-    },
-    "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
-    ],
-    "case_study": [
-    {"heading": "Project objective",
-    "body": "content"},
-    {"heading": "Background information",
-    "body": "content"},
-    {"heading": "Project challenges and requirements",
-    "body": "content"},
-    {"heading": "Architecture and system design",
-    "body": "content"},
-    {"heading": "UX/UI considerations",
-    "body": "content"},
-    {"heading": "Results",
-    "body": "content"},
-    {"heading": "Lessons learned and future recommendations",
-    "body": "content"},
-    {"heading": "Conclusion",
-    "body": "content"}
-    ]
-},
-{
-    "key": "project4",
-    "project_title": "Project 4",
-    "project_description": "Project 4 Description for cards on hover",
-    "media": {
-        "project_image": "URL or path to project image",
-        "project_video": "URL or path to project video"
-    },
-    "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
-    ],
-    "case_study": [
-    {"heading": "Project objective",
-    "body": "content"},
-    {"heading": "Background information",
-    "body": "content"},
+    "body": "contesysjysjrtynt"},
     {"heading": "Project challenges and requirements",
     "body": "content"},
     {"heading": "Architecture and system design",
