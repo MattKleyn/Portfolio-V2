@@ -1,4 +1,4 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph } from '@mattkleyn/component-library';
 import me from '../data/me.json';
 
 function SectionBuild() {

@@ -1,4 +1,4 @@
-import { ModalRoot, GridContainer, GridItem, Heading, Paragraph, Link, Button, Container } from "mattkleyn-component-library";
+import { ModalRoot, GridContainer, GridItem, Heading, Paragraph, Link, Button, Container } from "@mattkleyn/component-library";
 import me from '../data/me.json';
 
 function ContactMeModal({isOpen, toggleContactModal}) {

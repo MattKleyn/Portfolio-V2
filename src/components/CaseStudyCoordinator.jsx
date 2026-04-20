@@ -1,4 +1,4 @@
-import { Pill, Container, Image, ImageWrapper, Link, Paragraph, Heading, List, PullQuote, QuoteBlock, InlineQuote, Callout} from 'mattkleyn-component-library';
+import { Pill, Container, Image, ImageWrapper, Link, Paragraph, Heading, List, PullQuote, QuoteBlock, InlineQuote, Callout} from '@mattkleyn/component-library';
 import Collaborators from './Collaborators';
 import im from '../assets/images/placeholder_project_image.png';
 

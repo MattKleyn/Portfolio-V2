@@ -1,4 +1,4 @@
-import {ModalRoot,GridContainer, GridItem, Button, Container, Paragraph, Heading, ImageWrapper, Image} from 'mattkleyn-component-library';
+import {ModalRoot,GridContainer, GridItem, Button, Container, Paragraph, Heading, ImageWrapper, Image} from '@mattkleyn/component-library';
 import me from '../data/me.json';
 import jam from '../assets/images/placeholder_about.jpg';
 

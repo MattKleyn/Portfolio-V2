@@ -1,4 +1,4 @@
-import { Section, Container, Heading } from 'mattkleyn-component-library';
+import { Section, Container, Heading } from '@mattkleyn/component-library';
 import me from '../data/me.json';
 
 function SectionTagline() {

@@ -1,4 +1,4 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, ImageWrapper, BackgroundOverlay } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Image, ImageWrapper, BackgroundOverlay } from '@mattkleyn/component-library';
 import { Link as RouterLink } from 'react-router-dom';
 import me from '../data/me.json';
 import projectsArray from '../data/projects.json';

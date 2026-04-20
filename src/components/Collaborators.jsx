@@ -1,4 +1,4 @@
-import { Heading, Paragraph, Link, Container } from 'mattkleyn-component-library';
+import { Heading, Paragraph, Link, Container } from '@mattkleyn/component-library';
 
 function Collaborators({collaborator}) {
     return (

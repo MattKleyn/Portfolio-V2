@@ -1,4 +1,4 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Button } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Button } from '@mattkleyn/component-library';
 import me from '../data/me.json';
 
 function SectionValueProposition ({isOpen, toggleContactModal}) {

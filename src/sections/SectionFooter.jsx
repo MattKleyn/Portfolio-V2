@@ -1,4 +1,4 @@
-import { Section, GridContainer, GridItem, Container, Heading, Paragraph, ImageWrapper, Image, Link, Button } from 'mattkleyn-component-library';
+import { Section, GridContainer, GridItem, Container, Heading, Paragraph, ImageWrapper, Image, Link, Button } from '@mattkleyn/component-library';
 import me from '../data/me.json';
 import im from'../assets/images/placeholder_hero_image.png';
 

@@ -1,4 +1,4 @@
-import { NavRoot, NavBar, NavMenu, Image, Container, Paragraph, Button, NavToggle, NavOverlay, GridContainer, GridItem, Link, Portal, ImageWrapper } from 'mattkleyn-component-library';
+import { NavRoot, NavBar, NavMenu, Image, Container, Paragraph, Button, NavToggle, NavOverlay, GridContainer, GridItem, Link, Portal, ImageWrapper } from '@mattkleyn/component-library';
 import Logo from '../assets/images/placeholder_logo.svg';
 import { useNavigate } from "react-router-dom";
 import useNavController from "../utils/useNavController";

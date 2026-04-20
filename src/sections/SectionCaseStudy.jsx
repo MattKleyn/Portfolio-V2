@@ -1,4 +1,4 @@
-import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link, Button } from 'mattkleyn-component-library';
+import { Section, Container, GridContainer, GridItem, Heading, Paragraph, Image, ImageWrapper, Link, Button } from '@mattkleyn/component-library';
 import CaseStudyCoordinator from '../components/CaseStudyCoordinator';
 import { Link as RouterLink, useParams, useNavigate } from "react-router-dom";
 import me from '../data/me.json';
