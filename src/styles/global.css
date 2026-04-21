@@ -454,14 +454,17 @@ html {
         }
     }
 
-.project_title {
-    color: var(--color-alt-light);
+.project_title--inactive {
+    /* color: var(--color-alt-light); */
+    color: #c5c5c5;
+    height: 65px;
 }
 
 .project_links_container .project_title--active {
     color: var(--color-text);
-    font-size: var(--font-size-2xl-int);
-    
+    font-size: var(--font-size-2xl);
+    line-height: var(--font-size-2xl);
+    height: 65px;
 }
 
 .case_study_links_container {
@@ -471,6 +474,79 @@ html {
 
 .case_study_content_container {
     padding-inline: var(--space-2xl);
+}
+
+.pill_container {
+    flex-wrap: wrap;
+    margin-top: var(--space-4xl);
+    margin-bottom: var(--space-2xl);
+
+    .case_study_pill {
+        background-color: var(--color-bg);
+        border-color: var(--color-alt-light);
+        color: var(--color-alt-dark);
+        font-size: var(--font-size-sm);
+    }
+}
+
+.case_study_heading {
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+}
+
+.case_study_paragraph {
+    margin-block: var(--space-md);
+}
+
+.case_study_list {
+    color: var(--color-alt-dark);
+    font-size: var(--font-size-md);
+    line-height: calc(var(--font-size-md) * 1.2);
+    letter-spacing: var(--kerning-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-sm);
+}
+
+.case_study_pullquote {
+    margin-block: var(--space-2xl);
+}
+
+.case_study_quoteblock {
+    margin-block: var(--space-2xl);
+}
+
+.case_study_inlinequote {
+    margin-block: var(--space-sm);
+}
+
+.case_study_callout {
+    margin-block: var(--space-2xl);
+}
+
+.case_study_collaborator_wrapper {
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-2xl);
+    
+    h6 {
+        color: var(--color-alt-dark);
+        font-weight: var(--font-weight-light);
+        margin-bottom: var(--space-sm);
+    }
+
+    a {
+        color: var(--color-alt-dark);
+        font-size: var(--font-size-sm);
+    }
+}
+    
+    
+
+
+.bleed {
+    margin-inline: 0px;
 }
 
 /*──────────────────────────────

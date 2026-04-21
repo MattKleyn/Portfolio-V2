@@ -12,7 +12,7 @@ function SectionCaseStudy({project}) {
         <div>
             <Section as='section' maxWidth='full' className='section_case_study'>
                 <GridContainer as='div' columns='repeat(12,1fr)' rows='repeat(2,auto)' gap='lg'>
-                    <GridItem as='div' col='5 / span 6' row='1 / span 1'>
+                    <GridItem as='div' col='6 / span 6' row='1 / span 1'>
                         <Container as='div' direction='row' gap='md' maxWidth='full' className='case_study_heading_container'>
                             <Heading level='h2' >{`${me[3].heading[0]}`} <span class='heading_sm'>{`${me[3].heading[1]}`}</span></Heading>
                         </Container>
@@ -24,7 +24,7 @@ function SectionCaseStudy({project}) {
                             <Container as='div' direction='column' gap='xl' maxWidth='full' className='project_links_container' >
                                 {projectArray.map((project) => {
                                     return (<RouterLink to={`/project/${project.key}`}>
-                                        <Heading level='h6' id={project.project_title} className={project.key == id ? 'project_title--active' : 'project_title'}>
+                                        <Heading level='h6' id={project.project_title} className={project.key == id ? 'project_title--active' : 'project_title--inactive'}>
                                             {project.project_title}
                                         </Heading>
                                     </RouterLink>)
@@ -37,7 +37,7 @@ function SectionCaseStudy({project}) {
                     </GridItem>
 
 
-                    <GridItem as='div' col='5 / span 5' row='2 / span 1' >
+                    <GridItem as='div' col='6 / span 5' row='2 / span 1' >
                         <CaseStudyCoordinator project={project}></CaseStudyCoordinator>
                     </GridItem>
                 </GridContainer>
