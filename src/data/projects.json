@@ -1,4 +1,42 @@
 [{
+    "key": "cool_new_project",
+    "is_featured": false,
+    "project_title": "Cool new project",
+    "project_description": "just a cool new project to test my conditional rendering",
+    "media": {
+        "images": [
+            {"type": "hero", "url": "/images/portfolio_hero_image.png", "alt_text": "react alt text"}
+        ],
+        "videos": [
+            {"type": "process", "url": "URL or path to project image"}
+        ]
+    },
+    "project_links": [
+        {"type": "github", "url": "link1"},
+        {"type": "linkedin", "url": "link2"},
+        {"type": "live", "url": "link3"}
+    ],
+    "case_study": [
+    {"type": "pill", "content": ["HTML", "CSS", "Javascript", "React.js"]},
+    {"type": "heading", "level": "h4", "content": "Project objective"},
+    {"type": "paragraph", "content": "This is free real estate!"},
+    {"type": "heading", "level": "h4", "content": "Background information"},
+    {"type": "paragraph", "content": "contentsmh"},
+    {"type": "heading", "level": "h4", "content": "Project challenges and requirements"},
+    {"type": "paragraph", "content": "contennsnnst"},
+    {"type": "heading", "level": "h4", "content": "Architecture and system design"},
+    {"type": "paragraph", "content": "cosnnrntntent"},
+    {"type": "heading", "level": "h4", "content": "UX/UI considerations"},
+    {"type": "paragraph", "content": "constnrtnsttentsm"},
+    {"type": "heading", "level": "h4", "content": "Results"},
+    {"type": "paragraph", "content": "congnfgntent"},
+    {"type": "heading", "level": "h4", "content": "Lessons learned and future recommendations"},
+    {"type": "paragraph", "content": "nsttntsn"},
+    {"type": "heading", "level": "h4", "content": "Conclusion"},
+    {"type": "paragraph", "content": "contstntaent"}
+    ]
+},
+{
     "key": "matt_kleyn_component_library",
     "is_featured": true,
     "project_title": "MattKleyn React Component Library",

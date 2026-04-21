@@ -9,9 +9,12 @@ function SectionWorks() {
             {column: '1 / span 3', row: '2 / span 5'},
             {column: '4 / span 3', row: '2 / span 3'},
             {column: '7 / span 3', row: '2 / span 5'},
-            {column: '10 / span 3', row: '2 / span 3'}
+            {column: '10 / span 3', row: '2 / span 3'},
+            {column: '10 / span 3', row: '5 / span 2'}
             ];
 
+    const featuredProjects = projectsArray.filter(project => project.is_featured);
+        
     return (
         <div>
             <Section as='section' id='section_works' maxWidth='full' className='section_works'>
@@ -22,8 +25,13 @@ function SectionWorks() {
                         </Container>
                     </GridItem>
             
-                    {projectsArray.map((project, index) => {
+                    {featuredProjects.map((project, index) => {
                         const layout = layouts[index];
+
+                        if (!layout) {
+                            return null;
+                        }
+                        
                         return (
                             <GridItem as='div' col={layout.column} row={layout.row}>
                                 <RouterLink to={`/project/${project.key}`}>
@@ -34,7 +42,7 @@ function SectionWorks() {
                                             </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
-                                            <BackgroundOverlay overlayColor='var(--color-overlay)'/>
+                                            <BackgroundOverlay overlayColor='var(--color-overlay--inactive)' className='project_card_overlay'/>
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1' className='project_card_heading_container'>
                                             <Heading level='h5' className='project_card_heading'>{project.project_title}</Heading>
