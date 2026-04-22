@@ -1,4 +1,4 @@
-import { Pill, Container, Image, ImageWrapper, Link, Paragraph, Heading, List, PullQuote, QuoteBlock, InlineQuote, Callout} from '@mattkleyn/component-library';
+import { Pill, Container, Image, ImageWrapper, Link, Paragraph, Heading, List, PullQuote, QuoteBlock, InlineQuote, Callout, Media} from '@mattkleyn/component-library';
 import Collaborators from './Collaborators';
 import im from '../assets/images/placeholder_project_image.png';
 
@@ -19,6 +19,16 @@ function CaseStudyCoordinator({project}) {
             quoteblock: (item) => <QuoteBlock cite={item.cite} className='case_study_quoteblock'>{item.content}</QuoteBlock>, 
             inlinequote: (item) => <InlineQuote className='case_study_inlinequote'>{item.content}</InlineQuote>, 
             callout: (item) => <Callout variant={item.variant} className='case_study_callout'>{item.content}</Callout>,
+            image: (item) => (
+                <ImageWrapper className='case_study_content_image_wrapper'>
+                    <Image src={item.src} alt={item.alt} variant='contain' className='case_study_content_image'/>
+                </ImageWrapper>
+            ),
+            figure: (item) => (
+                <Media as={item.type} caption={item.caption} className={`case_study_media_container ${item.classname}`}>
+                    <Image src={item.src} alt={item.alt} variant='contain' className='case_study_media_image'/>
+                </Media>
+            ),
             collaborators: (item) => (
                 <Container as='div' direction='row' gap='4xl' className='case_study_collaborator_wrapper'>
                     {item.content.map((collaborator, index) => (

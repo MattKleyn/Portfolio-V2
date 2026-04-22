@@ -42,7 +42,7 @@ function SectionWorks() {
                                             </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
-                                            <BackgroundOverlay overlayColor='var(--color-overlay--inactive)' className='project_card_overlay'/>
+                                            <BackgroundOverlay overlayColor='var(--project-card-overlay-color)' className='project_card_overlay'/>
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1' className='project_card_heading_container'>
                                             <Heading level='h5' className='project_card_heading'>{project.project_title}</Heading>
