@@ -2,13 +2,13 @@
   DOCUMENT
 ──────────────────────────────*/
 body {
-    background-color: white;
-    color: black;
+    background-color: var(--color-white);
+    color: var(--color-black);
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
 * {
-    font-weight: 300;
+    font-weight: var(--font-weight-reg);
 }
 
 html { 
@@ -36,32 +36,32 @@ html {
     margin-block: var(--space-md);
 
     .nav_link {
-        font-weight: var(--font-weight-reg);
+        font-weight: var(--font-weight-md);
         border: none;
         background-color: transparent;
         padding-top: var(--space-sm);
         font-size: var(--font-size-md);
         line-height: calc(var(--font-size-md) * 1.6);
-        color: var(--color-alt-dark);
+        color: var(--color-dark);
     }
 
     .nav_contact_text {
         text-wrap-mode: nowrap;
-        font-weight: var(--font-weight-reg);
+        font-weight: var(--font-weight-md);
         letter-spacing: var(--kerning-lg);
-        color: var(--color-alt-dark);
+        color: var(--color-dark);
         text-transform: capitalize;
     }
 }
 
 .nav_logo_wrapper.nav_logo_wrapper {
     margin-block: auto;
-    height:3rem;
+    height: var(--space-2xl);
     overflow: visible;
 }
 
 .logo {
-    max-width: 3rem;
+    max-width: var(--space-2xl);
 }
 
 .nav_bar .nav_logo--hidden-on-scroll {
@@ -79,7 +79,7 @@ html {
 .nav_bar .nav_toggle--visible {
     border: none;
     box-sizing: border-box;
-    background-color: var(--color-text);
+    background-color: var(--color-black);
     padding-inline: var(--space-md);
     padding-block: var(--space-sm);
     /* fixed button height, otherwise collapses, content renders as 0px */
@@ -88,7 +88,7 @@ html {
 
 .nav_bar .nav_toggle--visible .nav_toggle_text--open {
     display: inline-block;
-    color: var(--color-bg);
+    color: var(--color-white);
     letter-spacing: var(--kerning-lg);
     text-transform: uppercase;
 }
@@ -102,25 +102,25 @@ html {
 .nav_overlay.nav_overlay {
     position: fixed;
     inset: 0;
-    background: var(--color-text);
+    background: var(--color-black);
     z-index: 99999999999999999999999999999999;
 
     .nav_link_overlay {
-        font-weight: var(--font-weight-reg);
+        font-weight: var(--font-weight-md);
         border: none;
         background-color: transparent;
         padding: 0rem;
-        color: var(--color-bg);
+        color: var(--color-white);
         font-size: var(--font-size-4xl);
         line-height: calc(var(--font-size-3xl) * 1.6);
         text-align: left;
     }
 
     .contact_overlay {
-        font-weight: var(--font-weight-reg);
+        font-weight: var(--font-weight-md);
         border: none;
         padding: 0rem;
-        color: var(--color-bg);
+        color: var(--color-white);
         font-size: var(--font-size-4xl);
         line-height: calc(var(--font-size-3xl) * 1.6);
     }
@@ -132,7 +132,7 @@ html {
     .nav_links_container {
         font-size: var(--font-size-lg);
         line-height: calc(var(--font-size-lg) * 1.6);
-        color: var(--color-bg);
+        color: var(--color-white);
     }
 
     .nav_overlay_close_container {
@@ -142,7 +142,7 @@ html {
     .nav_close_toggle {
         font-size: var(--font-size-lg);
         line-height: calc(var(--font-size-lg) * 1.6);
-        color: var(--color-bg);
+        color: var(--color-white);
     }
 }
 
@@ -152,13 +152,13 @@ html {
 .button_primary_container {
     padding-inline: var(--space-md);
     padding-block: var(--space-sm);
-    background-color: var(--color-text);
+    background-color: var(--color-black);
     color: var(--color-bg);
 }
 
 .button_primary_text.button_primary_text {
-    letter-spacing: 1px;
-    color: var(--color-bg);
+    letter-spacing: var(--kerning-lg);
+    color: var(--color-white);
 }
 
 .button_secondary_container {
@@ -166,7 +166,7 @@ html {
     padding-inline: 0px;
     width: fit-content;
     border: none;
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-black);
     background-color: transparent;
 }
 
@@ -174,21 +174,21 @@ html {
     letter-spacing: var(--kerning-lg);
     font-size: var(--font-size-lg);
     line-height: calc(var(--font-size-md) * 1.6);
-    font-weight: var(--font-weight-reg);
-    color: var(--color-alt-dark);
+    font-weight: var(--font-weight-md);
+    color: var(--color-dark);
     text-wrap-mode: nowrap;
 }
 
 .paragraph--sm { 
-    color: var(--color-alt-dark)
+    color: var(--color-dark)
 }
 
 .paragraph--md { 
-    color: var(--color-alt-dark)
+    color: var(--color-dark)
 }
 
 .paragraph--lg { 
-    color: var(--color-alt-dark)
+    color: var(--color-dark)
 }
 
 .modal--closed {
@@ -218,32 +218,33 @@ html {
         width: 600px;
         max-width: 90vw;
         max-height: 90vh;
-        background-color: var(--color-text);
+        background-color: var(--color-black);
     }
 }
 
 .contact_me_modal_heading.contact_me_modal_heading {
-    color: var(--color-bg);
-    font-weight: var(--font-weight-reg);
+    color: var(--color-white);
+    font-weight: var(--font-weight-md);
     letter-spacing: var(--kerning-lg);
     text-transform: capitalize;
 }
 
 .contact_me_modal_text.contact_me_modal_text {
-    color: rgba(255,255,255,0.8);
+    color: var(--color-neutral);
 }
 
 .contact_me_modal_link {
-    color: var(--color-bg);
+    color: var(--color-white);
     font-size: var(--font-size-lg);
 }
 
 .button_container--ghost--dark {
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-white);
     padding-inline: var(--space-md);
     padding-block: var(--space-sm);
+    letter-spacing: var(--kerning-lg);
     background-color: transparent;
-    color: var(--color-bg);
+    color: var(--color-white);
 }
 
 /*──────────────────────────────
@@ -284,12 +285,13 @@ html {
 }
 
 .hero_image_container {
-    background-color: #FAFAFA;
+    border: 1px solid var(--color-light);
 }
 
 .hero_image { 
     width: 100%;
     height: 100%;
+    object-position: 100% 35%;
  }
 
  /*──────────────────────────────
@@ -297,25 +299,27 @@ html {
 ──────────────────────────────*/
 .section_tagline.section_tagline {
     padding-top: 0rem;
-    padding-left: 0rem;
+    padding-left: var(--space-sm);
 }
 
 .tagline_text {
     text-transform: uppercase;
     text-wrap-mode: nowrap;
-    color: var(--color-alt-light);
+    color: var(--color-neutral);
 }
 
 .tagline_text.tagline--lg {
     font-size: var(--font-size-4xl);
-    opacity: 0.3;
+    letter-spacing: var(--kerning-lg);
+    opacity: 0.35;
 }
 
 /*──────────────────────────────
   VALUE PROPOSITION SECTION
 ──────────────────────────────*/
-.problem_statement {
-    font-weight: 500;
+.problem_statement.problem_statement {
+    font-weight: var(--font-weight-sb);
+    letter-spacing: var(--kerning-sm);
 }
 
 .heading_sm {
@@ -340,8 +344,8 @@ html {
     justify-self: end;
 }
 
-.values_titles {
-    font-weight: var(--font-weight-reg);
+.values_titles.values_titles {
+    font-weight: var(--font-weight-md);
 }
 
 /*──────────────────────────────
@@ -360,13 +364,13 @@ html {
 }
 
 .build_card {
-    border-bottom: 1px solid var(--color-alt-light);
+    border-bottom: 1px solid var(--color-neutral);
     padding-bottom: var(--space-md);
     min-height: var(--space-3xl);
 }
 
-.build_title {
-    font-weight: var(--font-weight-reg);
+.build_title.build_title {
+    font-weight: var(--font-weight-md);
     text-wrap-mode: nowrap;
     min-width: 406px;
 }
@@ -393,7 +397,7 @@ html {
 }
 
 .project_card_heading { 
-    color: var(--color-bg);
+    color: var(--color-white);
 }
 
 .project_card_text_container { 
@@ -403,9 +407,9 @@ html {
 }
 
 .project_card_text { 
-    color: var(--color-bg);
+    color: var(--color-white);
     opacity: 0;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.4s ease-in;
 }
 
 .project_card:hover .project_card_text {
@@ -414,7 +418,7 @@ html {
 
 .project_card_image { 
     width: 100%;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 .project_card:hover .project_card_image {
@@ -423,6 +427,7 @@ html {
 
 .project_card_overlay {
     --project-card-overlay-color: var(--color-overlay--inactive);
+    transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .project_card:hover .project_card_overlay {
@@ -456,7 +461,7 @@ html {
 }
 
 .return_container {
-    border-bottom: 1px solid var(--color-alt-light);
+    border-bottom: 1px solid var(--color-neutral);
 }
 
 .return_button {
@@ -464,31 +469,33 @@ html {
         background-color: transparent;
         padding: 0rem;
 
-        p {
+        & > .button_secondary_text {
             font-weight: var(--font-weight-md); 
             font-size: var(--font-size-lg);
-            color: var(--color-alt-dark);
+            color: var(--color-neutral);
             line-height: calc(var(--font-size-lg) * 1.6);
             letter-spacing: var(--kerning-lg);
         }
     }
 
 .project_title--inactive {
-    /* color: var(--color-alt-light); */
-    color: #c5c5c5;
-    height: 65px;
+    color: var(--color-neutral);
+    height: var(--space-3xl);
 }
 
 .project_links_container .project_title--active {
-    color: var(--color-text);
+    color: var(--color-black);
     font-size: var(--font-size-2xl);
     line-height: var(--font-size-2xl);
-    height: 65px;
+    height: var(--space-3xl);
 }
 
 .case_study_links_container {
     justify-content: end;
-    color: var(--color-alt-light);
+
+    p {
+        color: var(--color-dark);
+    }
 }
 
 .case_study_content_container {
@@ -501,9 +508,9 @@ html {
     margin-bottom: var(--space-2xl);
 
     .case_study_pill {
-        background-color: var(--color-bg);
-        border-color: var(--color-alt-light);
-        color: var(--color-alt-dark);
+        background-color: var(--color-light);
+        border-color: var(--color-neutral);
+        color: var(--color-dark);
         font-size: var(--font-size-sm);
     }
 }
@@ -518,7 +525,7 @@ html {
 }
 
 .case_study_list {
-    color: var(--color-alt-dark);
+    color: var(--color-dark);
     font-size: var(--font-size-md);
     line-height: calc(var(--font-size-md) * 1.2);
     letter-spacing: var(--kerning-sm);
@@ -554,13 +561,13 @@ html {
     margin-bottom: var(--space-2xl);
     
     h6 {
-        color: var(--color-alt-dark);
-        font-weight: var(--font-weight-light);
+        color: var(--color-dark);
+        font-weight: var(--font-weight-reg);
         margin-bottom: var(--space-sm);
     }
 
     a {
-        color: var(--color-alt-dark);
+        color: var(--color-dark);
         font-size: var(--font-size-sm);
     }
 }
@@ -572,7 +579,7 @@ html {
 }
 
 .case_study_content_image_wrapper {
-    border: 1px solid var(--color-inactive);
+    border: 1px solid var(--color-neutral);
     padding: var(--space-lg);
     height: 100%;
     width: 100%;
@@ -599,14 +606,14 @@ html {
     .figure_caption {
         font-size: var(--font-size-sm);
         line-height: var(--font-size-sm);
-        color: var(--color-alt-dark);
-        border: 1px solid var(--color-inactive);
+        color: var(--color-dark);
+        border: 1px solid var(--color-neutral);
         padding: var(--space-md);
     }
 }
 
 .case_study_media_image {
-    border: 1px solid var(--color-inactive);
+    border: 1px solid var(--color-neutral);
     padding: var(--space-lg);
     height: 95%;
     width: 100%;
@@ -632,7 +639,7 @@ html {
         border-left: none;
         border-top: none;
         border-right: none;
-        border-bottom: 1px solid var(--color-alt-dark);
+        border-bottom: 1px solid var(--color-dark);
         background-color: transparent;
         padding-inline: 0rem;
         
@@ -656,8 +663,8 @@ html {
     }
 
     .button_primary_text {
-        color: var(--color-bg);
-        letter-spacing: 1px;
+        color: var(--color-white);
+        letter-spacing: var(--kerning-lg);
     }
 }
 
@@ -676,8 +683,9 @@ html {
     text-align: center;
 }
 
-.footer_cta_text {
-    font-weight: var(--font-weight-reg);
+.footer_cta_text.footer_cta_text {
+    font-weight: var(--font-weight-md);
+    letter-spacing: var(--kerning-sm);
 }
 
 .footer_content_wrapper {
@@ -686,6 +694,10 @@ html {
 
 .footer_image_container {
     height: 100%;
+    
+    img {
+        object-position: 100% 35%;
+    }
 }
 
 .footer_main_text.footer_main_text {
@@ -708,7 +720,6 @@ html {
 }
 
 .footer_link {
-    font-weight: var(--font-weight-med);
+    font-weight: var(--font-weight-md);
+    letter-spacing: var(--kerning-lg);
 }
-
-

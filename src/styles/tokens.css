@@ -4,15 +4,15 @@ border tokens
 */
 :root {
     --color-alt-light: #6A7A8C;
-    --color-alt-dark: #464646;
     --color-inactive: #c5c5c5;
     --color-overlay--inactive: rgba(25,25,25,0.1);
-    --color-overlay--active: rgba(25,25,25,0.85);
-    --font-weight-light: 300;
-    --font-weight-reg: 400;
-    --font-weight-med: 500;
-    --font-weight-sb: 600;
-    --kerning-sm: -1%;
-    --kerning-md: 0%;
-    --kerning-lg: 1%;
+    --color-overlay--active: rgba(25,25,25,0.9);
+    --font-weight-light: 200;
+    --font-weight-reg: 300;
+    --font-weight-md: 400;
+    --font-weight-sb: 500;
+    --font-weight-bk: 600;
+
+--color-alt-dark: #464646;
+
 }
