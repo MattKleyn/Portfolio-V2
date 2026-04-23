@@ -6,6 +6,7 @@ import projectArray from "../data/projects.json";
 import { useEffect } from "react";
 import ContactMeModal from "../sections/ContactMeModal";
 import useContactController from "../sections/useContactController";
+import ScrollToTop from "../motion/ScrollToTop";
 
 function ProjectsPage() {
     const {isOpen, toggleContactModal} = useContactController();
@@ -18,6 +19,7 @@ function ProjectsPage() {
 
     return (
         <div className="projects_page">
+            <ScrollToTop />
             <ContactMeModal isOpen={isOpen} toggleContactModal={toggleContactModal}/>
             <Nav isOpen={isOpen} toggleContactModal={toggleContactModal}/>
             <SectionCaseStudy project={project}/>
