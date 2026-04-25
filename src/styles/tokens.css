@@ -3,16 +3,33 @@ border tokens
 
 */
 :root {
+    /*──────────────────────────────
+    COLOR TOKENS
+    ──────────────────────────────*/
     --color-alt-light: #6A7A8C;
     --color-inactive: #c5c5c5;
     --color-overlay--inactive: rgba(25,25,25,0.1);
     --color-overlay--active: rgba(25,25,25,0.9);
+
+    /*──────────────────────────────
+    TYPE TOKENS
+    ──────────────────────────────*/
     --font-weight-light: 200;
     --font-weight-reg: 300;
     --font-weight-md: 400;
     --font-weight-sb: 500;
     --font-weight-bk: 600;
 
---color-alt-dark: #464646;
+    /*──────────────────────────────
+    MOTION TOKENS
+    ──────────────────────────────*/
+    --motion-duration-quick: 200ms;     
+    --motion-duration-standard: 250ms;  
+    --motion-duration-easy: 320ms;      
+    --motion-duration-slow: 400ms;
+    --motion-duration-cinematic: 500ms; 
+
+    --motion-ease-fluid: cubic-bezier(0.22, 1, 0.36, 1); /* ease-out */
+    --motion-ease-cinematic: cubic-bezier(0.65, 0, 0.35, 1); /* ease-in-out */
 
 }

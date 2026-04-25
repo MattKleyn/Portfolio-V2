@@ -34,7 +34,7 @@ function Footer({isOpen, toggleContactModal}) {
                     <GridItem as='div' col='4 / span 6' row='6 / span 1' className='footer_links_wrapper'>
                         <Container as='div' direction='row' maxWidth='full' className='footer_links_container'>
                             {Object.entries(me[6].links).map(([name, link]) => (
-                                <Link href={link} target='_blank' className='footer_link'>{name}</Link>
+                                <Link href={link} target='_blank' className='footer_link button'>{name}</Link>
                             ))}
                         </Container>
                     </GridItem>
