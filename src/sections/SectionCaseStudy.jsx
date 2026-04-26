@@ -31,8 +31,11 @@ function SectionCaseStudy({project}) {
                                 })}
                             </Container>
 
-                            <Container as='div' direction='column' maxWidth='full' className='return_container button_secondary_container'>
-                                <Button as='button' onClick={() => {navigate('/', {state: {scrollTo: "section_works"}})}} className='return_button' ><Paragraph level="md" className='button_secondary_text'>Go Back</Paragraph></Button>                       </Container>
+                            <Container as='div' direction='column' maxWidth='full' className='return_container'>
+                                <Button as='button' onClick={() => {navigate('/', {state: {scrollTo: "section_works"}})}} className='return_button button_secondary_container' >
+                                    <Paragraph level="md" className='button_secondary_text'>Go Back</Paragraph>
+                                    </Button>                       
+                            </Container>
                         </Container>
                     </GridItem>
 
