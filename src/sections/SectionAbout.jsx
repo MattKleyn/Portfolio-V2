@@ -5,6 +5,7 @@ import useRevealOnScroll from '../motion/useRevealOnScroll';
 
 function SectionAbout({isModalOpen, toggleModal}) {
     useRevealOnScroll(".l2-reveal-heading", 0.5, {rootMargin:"0px 0px -25% 0px"});
+    useRevealOnScroll(".l2-reveal-image", 0.35, {rootMargin:"0px 0px -25% 0px"});
 
     return (
         <div>
@@ -17,7 +18,7 @@ function SectionAbout({isModalOpen, toggleModal}) {
                     </GridItem>
                     <GridItem as='div' col='1 / span 4' row='3 / span 4' className='about_image_wrapper'> 
                         <ImageWrapper className='about_image_container'>
-                            <Image src={im} alt='a placeholder image of me' height='600' variant='cover' className='about_image'/>
+                            <Image src={im} alt='a placeholder image of me' height='600' variant='cover' className='about_image l2-reveal-image'/>
                         </ImageWrapper>
                     </GridItem>
                     <GridItem as='div' col='7 / span 4' row='3 / span 3'>

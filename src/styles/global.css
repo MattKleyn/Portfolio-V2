@@ -290,6 +290,57 @@ html {
   transform: translateY(0);
 }
 
+.l2-reveal-image {
+  opacity: 0;
+  transform: scale(1.05);
+  filter: brightness(0);
+  transition:
+    opacity var(--motion-duration-slow) var(--motion-ease-fluid),
+    transform var(--motion-duration-slow) var(--motion-ease-fluid),
+    filter var(--motion-duration-slow) var(--motion-ease-fluid);
+}
+
+.l2-reveal-image.is-visible {
+  opacity: 1;
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+.l2-reveal-image--blur {
+  filter: blur(12px);
+}
+
+.l2-reveal---blur.is-visible {
+  filter: blur(0);
+}
+
+.l2-reveal-image--vignette {
+  position: relative;
+}
+
+.l2-reveal-image--vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0,0,0,0.6) 0%,
+    rgba(0,0,0,0.4) 40%,
+    rgba(0,0,0,0.0) 70%
+  );
+  pointer-events: none;
+}
+
+.l2-reveal-image--vignette.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.l2-reveal-image--vignette.is-visible::after {
+  opacity: 0;
+}
+
+
 /*──────────────────────────────
   CONTACT MODAL
 ──────────────────────────────*/
@@ -760,6 +811,10 @@ html {
 .about_grid {
     height: 100%;
 }
+
+/* .about_image_container {
+    background-color: var(--color-black);
+} */
 
 .about_button_wrapper {
     justify-content: end;

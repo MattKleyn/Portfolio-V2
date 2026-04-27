@@ -7,6 +7,7 @@ import useRevealOnScroll from '../motion/useRevealOnScroll';
 
 function SectionWorks() {
     useRevealOnScroll(".l2-reveal-heading", 0.5, {rootMargin:"0px 0px -25% 0px"});
+    useRevealOnScroll(".l2-reveal-image", 1, {rootMargin:"0px 0px -25% 0px"});
 
     const layouts = [
             {column: '1 / span 3', row: '2 / span 5'},
@@ -41,7 +42,7 @@ function SectionWorks() {
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
                                             <ImageWrapper className='project_card_image-wrapper'>
-                                                <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} variant='cover' className='project_card_image'/>
+                                                <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} variant='cover' className='project_card_image l2-reveal-image l2-reveal-image--blur'/>
                                             </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1'>
