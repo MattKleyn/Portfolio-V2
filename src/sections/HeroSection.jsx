@@ -10,9 +10,9 @@ function HeroSection() {
         <Section as='section' id='section_hero' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
-                <ImageWrapper className='hero_image_container'>
-                    <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image'/>
-                </ImageWrapper>
+                    <ImageWrapper className='hero_image_container'>
+                        <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image'/>
+                    </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>
                     <Container as='div' direction='column' gap='xl' className='hero_content'>

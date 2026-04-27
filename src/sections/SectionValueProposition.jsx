@@ -1,20 +1,23 @@
 import { Section, GridContainer, GridItem, Container, Heading, Paragraph, Button } from '@mattkleyn/component-library';
 import me from '../data/me.json';
+import useRevealOnScroll from '../motion/useRevealOnScroll';
 
 function SectionValueProposition ({isOpen, toggleContactModal}) {
+    useRevealOnScroll(".l2-reveal-heading", 0.5, {rootMargin:"0px 0px -25% 0px"});
+    useRevealOnScroll(".l2-reveal-paragraph", 0.5, {rootMargin:"0px 0px -25% 0px"});
     return (
         <div>
             <Section as='section' className='section_value_proposition' maxWidth='full'>
                 <GridContainer as='div' col='repeat(12, 1fr)' rows='repeat(9, 1fr)' gap='lg'>
                     <GridItem as='div' col='5 / span 6' row='1 / span 2'>
                         <Container as='div' direction='row' gap='lg' maxWidth='full'>
-                            <Paragraph level='md' className='problem_statement max-width-half'>{`${me[2].problem}`}</Paragraph>
-                            <Paragraph level='md' className='solution_statement max-width-half'>{`${me[2].solution}`}</Paragraph>
+                            <Paragraph level='md' className='problem_statement max-width-half l2-reveal-paragraph'>{`${me[2].problem}`}</Paragraph>
+                            <Paragraph level='md' className='solution_statement max-width-half l2-reveal-paragraph'>{`${me[2].solution}`}</Paragraph>
                         </Container>
                     </GridItem>
                     <GridItem as='div' col='2 / span 4' row='4 / span 2'>
                         <Container as='div' direction='column' gap='sm' maxWidth='full'>
-                            <Heading level='h2' >{`${me[2].heading[0]}`}<span className='heading_sm'>{`${me[2].heading[1]}`}</span></Heading>
+                            <Heading level='h2' className='l2-reveal-heading'>{`${me[2].heading[0]}`}<span className='heading_sm'>{`${me[2].heading[1]}`}</span></Heading>
                             <Paragraph level='md' className='why_me' >{`${me[2].why_me}`}</Paragraph>
                         </Container>
                     </GridItem>
@@ -22,7 +25,7 @@ function SectionValueProposition ({isOpen, toggleContactModal}) {
                         <Container as='div' direction='row' gap='lg' maxWidth='full' className='values_container'>
                             {Object.entries(me[2].work_values).map(([title,text]) => (
                             <Container as='div' direction='column' gap='md' maxWidth='xs' className='values_card'>
-                                <Heading level='h5' className='values_titles'>{title}</Heading>
+                                <Heading level='h5' className='values_titles l2-reveal-heading'>{title}</Heading>
                                 <Paragraph level='md'>{text}</Paragraph>
                             </Container>
                             ))}

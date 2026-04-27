@@ -3,8 +3,11 @@ import { Link as RouterLink } from 'react-router-dom';
 import me from '../data/me.json';
 import projectsArray from '../data/projects.json';
 import im from '../assets/images/placeholder_project_image.png'
+import useRevealOnScroll from '../motion/useRevealOnScroll';
 
 function SectionWorks() {
+    useRevealOnScroll(".l2-reveal-heading", 0.5, {rootMargin:"0px 0px -25% 0px"});
+
     const layouts = [
             {column: '1 / span 3', row: '2 / span 5'},
             {column: '4 / span 3', row: '2 / span 3'},
@@ -21,7 +24,7 @@ function SectionWorks() {
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='works_grid'>
                     <GridItem as='div' col='7 / span 6' row='1 / span 1'>
                         <Container as='div' direction='inline'>
-                            <Heading level='h2' >{`${me[3].heading[0]}`}<span class='heading_sm'>{me[3].heading[1]}</span></Heading>
+                            <Heading level='h2' className='l2-reveal-heading'>{`${me[3].heading[0]}`}<span className='heading_sm'>{me[3].heading[1]}</span></Heading>
                         </Container>
                     </GridItem>
             

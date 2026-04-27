@@ -32,4 +32,8 @@ border tokens
     --motion-ease-fluid: cubic-bezier(0.22, 1, 0.36, 1); /* ease-out */
     --motion-ease-cinematic: cubic-bezier(0.65, 0, 0.35, 1); /* ease-in-out */
 
+    --motion-translate-sm: 0.5rem;
+    --motion-translate-md: 1rem;
+    --motion-translate-lg: 1.5rem;
+
 }

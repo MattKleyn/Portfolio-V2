@@ -261,6 +261,34 @@ html {
     display: block;
 }
 
+/*──────────────────────────────
+  GLOBAL MOTION 
+──────────────────────────────*/
+.l2-reveal-heading {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity var(--motion-duration-slow) var(--motion-ease-fluid),
+    transform var(--motion-duration-slow) var(--motion-ease-fluid);
+}
+
+.l2-reveal-heading.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.l2-reveal-paragraph {
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition:
+    opacity var(--motion-duration-easy) var(--motion-ease-fluid),
+    transform var(--motion-duration-easy) var(--motion-ease-fluid);
+}
+
+.l2-reveal-paragraph.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /*──────────────────────────────
   CONTACT MODAL
