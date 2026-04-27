@@ -48,7 +48,7 @@ html {
         line-height: calc(var(--font-size-md) * 1.6);
         color: var(--color-dark);
         border-bottom: 1px solid var(--color-white);
-        transition: border-bottom var(--motion-duration-standard) var(--motion-ease-standard);
+        transition: border-bottom var(--motion-duration-slow) var(--motion-ease-standard);
     }
 
     .nav_link:hover {
@@ -141,8 +141,8 @@ html {
         border: none;
         border-bottom: 1px solid var(--color-black);
         transition: 
-            color var(--motion-duration-standard) var(--motion-ease-decelerate),
-            border-bottom var(--motion-duration-standard) var(--motion-ease-decelerate);
+            color var(--motion-duration-easy) var(--motion-ease-decelerate),
+            border-bottom var(--motion-duration-easy) var(--motion-ease-decelerate);
     }
 
     .nav_close_toggle:hover {
@@ -166,9 +166,9 @@ html {
         line-height: calc(var(--font-size-3xl) * 1.6);
         text-align: left;
         transition: 
-            color var(--motion-duration-standard) var(--motion-ease-decelerate),
-            scale var(--motion-duration-standard) var(--motion-ease-decelerate),
-            border-bottom var(--motion-duration-standard) var(--motion-ease-decelerate);
+            color var(--motion-duration-slow) var(--motion-ease-decelerate),
+            scale var(--motion-duration-slow) var(--motion-ease-decelerate),
+            border-bottom var(--motion-duration-slow) var(--motion-ease-decelerate);
     }
 
     .nav_overlay_section_heading:hover {
@@ -177,7 +177,7 @@ html {
     }
 
      .nav_overlay_section_heading:active {
-        transition-timing-function: var(--motion-duration-quick);
+        transition-timing-function: var(--motion-duration-standard);
         scale: var(--motion-scale-press);
         border-bottom: var(--space-xs) solid var(--color-white);
         color: var(--color-white);
@@ -197,14 +197,21 @@ html {
         color: var(--color-neutral);
         border-bottom: 1px solid var(--color-black);
         transition:
-            color var(--motion-duration-standard) var(--motion-ease-decelerate), 
-            border-bottom var(--motion-duration-standard) var(--motion-ease-decelerate);
+            color var(--motion-duration-easy) var(--motion-ease-decelerate), 
+            border-bottom var(--motion-duration-easy) var(--motion-ease-decelerate),
+            scale var(--motion-duration-easy) var(--motion-ease-decelerate);
     }
 
     .nav_overlay_link:hover {
         box-shadow: none;
         border-bottom: 1px solid var(--color-light);
         color: var(--color-light);
+        scale: var(--motion-scale-hover);
+    }
+
+    .nav_overlay_link:active {
+        box-shadow: none;
+        scale: var(--motion-scale-press);
     }
 }
 
@@ -340,6 +347,53 @@ html {
   opacity: 0;
 }
 
+.l3-reveal-hero {
+  opacity: 0;
+  transform: translateY(20px) scale(1.02);
+  filter: blur(8px);
+  transition:
+    opacity 1s var(--motion-ease-fluid),
+    transform 1s var(--motion-ease-fluid),
+    filter 1s var(--motion-ease-fluid);
+}
+
+.l3-reveal-hero.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.l3-reveal-hero-2 {
+  opacity: 0;
+  transform: translateY(20px) scale(1.02);
+  filter: blur(8px);
+  transition:
+    opacity 1s var(--motion-ease-fluid),
+    transform 1s var(--motion-ease-fluid),
+    filter 1s var(--motion-ease-fluid);
+}
+
+.l3-reveal-hero-2.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.l3-reveal-hero-3 {
+  opacity: 0;
+  transform: translateY(20px) scale(1.02);
+  filter: blur(8px);
+  transition:
+    opacity 1s var(--motion-ease-fluid),
+    transform 1s var(--motion-ease-fluid),
+    filter 1s var(--motion-ease-fluid);
+}
+
+.l3-reveal-hero-3.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
 
 /*──────────────────────────────
   CONTACT MODAL
