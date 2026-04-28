@@ -13,15 +13,44 @@ function HeroSection() {
     return <div className='section_hero_wrapper'>
         <Section as='section' id='section_hero' className='section_hero'>
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
-                <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
+                <GridItem as='div' col="1 / span 12" row="5 / span 2" className='hero_gridwrap_img'>
                     <ImageWrapper className='hero_image_container'>
-                        <Image src={`${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero'/>
+                        <Image src={`${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero-3'/>
                     </ImageWrapper>
                 </GridItem>
-                <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>
+                <GridItem as='div' col="6 / span 2" row='2 / span 1'>
+                    <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
+                        <Paragraph level='md'>
+                            /role
+                        </Paragraph>
+                        <Paragraph level='md'>
+                            {`${me[0].job}`}
+                        </Paragraph>
+                    </Container>
+                </GridItem>
+                <GridItem as='div' col="8 / span 2" row='2 / span 1'>
+                    <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
+                        <Paragraph level='md'>
+                            /based_in
+                        </Paragraph>
+                        <Paragraph level='md'>
+                            {`${me[0].country}`}
+                        </Paragraph>
+                    </Container>
+                </GridItem>
+                <GridItem as='div' col="10 / span 2" row='2 / span 1'>
+                    <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
+                        <Paragraph level='md'>
+                            /available_for
+                        </Paragraph>
+                        <Paragraph level='md'>
+                            {`${me[0].available_for}`}
+                        </Paragraph>
+                    </Container>
+                </GridItem>
+                <GridItem as='div' col="10 /span 3" row="3 / span 2" className='hero_gridwrap_job'>
                     <Container as='div' direction='column' gap='xl' className='hero_content'>
                         <Container as='div' direction='column' gap='lg' className='hero_text'>
-                            <Heading level="h3" className='job_title l3-reveal-hero-2'>{`${me[0].job}`}</Heading>
                             <Paragraph level="md" className='hero_value_statement'>{`${me[0].description}`}</Paragraph>
                         </Container>
                         <Container as='div' direction='row' gap='md' className='hero_socials'>
@@ -31,8 +60,8 @@ function HeroSection() {
                         </Container>
                     </Container>
                 </GridItem>
-                <GridItem as='div' col="1 / span 12" row="5 / span 2" className='hero_gridwrap_fullname'>
-                    <Heading level="h1" className='full_name l3-reveal-hero-3'>{`${me[0].fname} ${me[0].lname}`}</Heading>
+                <GridItem as='div' col="1 / span 5" row="2 / span 3" className='hero_gridwrap_fullname'>
+                    <Heading level="h1" className='full_name l3-reveal-hero-2'>{`${me[0].fname} ${me[0].lname}`}</Heading>
                 </GridItem>
             </GridContainer>
         </Section>

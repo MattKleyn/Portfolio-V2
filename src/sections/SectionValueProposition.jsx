@@ -9,10 +9,10 @@ function SectionValueProposition ({isOpen, toggleContactModal}) {
         <div>
             <Section as='section' className='section_value_proposition' maxWidth='full'>
                 <GridContainer as='div' col='repeat(12, 1fr)' rows='repeat(9, 1fr)' gap='lg'>
-                    <GridItem as='div' col='5 / span 6' row='1 / span 2'>
-                        <Container as='div' direction='row' gap='lg' maxWidth='full'>
-                            <Paragraph level='md' className='problem_statement max-width-half l2-reveal-paragraph'>{`${me[2].problem}`}</Paragraph>
-                            <Paragraph level='md' className='solution_statement max-width-half l2-reveal-paragraph'>{`${me[2].solution}`}</Paragraph>
+                    <GridItem as='div' col='6 / span 3' row='1 / span 3'>
+                        <Container as='div' direction='column' gap='lg' maxWidth='full'>
+                            <Paragraph level='md' className='problem_statement l2-reveal-paragraph'>{`${me[2].problem}`}</Paragraph>
+                            <Paragraph level='md' className='solution_statement l2-reveal-paragraph'>{`${me[2].solution}`}</Paragraph>
                         </Container>
                     </GridItem>
                     <GridItem as='div' col='2 / span 4' row='4 / span 2'>
