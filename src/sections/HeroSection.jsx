@@ -1,6 +1,5 @@
 import { Heading, Paragraph, Link, ImageWrapper, Image, Section, Container, GridContainer, GridItem } from '@mattkleyn/component-library';
 import me from '../data/me.json';
-import heroImage from '../assets/images/placeholder_hero_image.png';
 import linkedinIcon from '../assets/icons/icon_linkedin.svg';
 import githubIcon from '../assets/icons/icon_github.svg';
 import fiverrIcon from '../assets/icons/icon_fivrr.svg';
@@ -16,7 +15,7 @@ function HeroSection() {
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="3 / span 3" row="2 / span 3" className='hero_gridwrap_img'>
                     <ImageWrapper className='hero_image_container'>
-                        <Image src={heroImage} alt='a headshot of myself' width="275" variant='cover' className='hero_image l3-reveal-hero'/>
+                        <Image src={`${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero'/>
                     </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col="7 /span 3" row="2 / span 3" className='hero_gridwrap_job'>

@@ -1,6 +1,5 @@
 import { Section, GridContainer, GridItem, Container, Heading, Paragraph, ImageWrapper, Image, Link, Button } from '@mattkleyn/component-library';
 import me from '../data/me.json';
-import im from'../assets/images/placeholder_hero_image.png';
 import useRevealOnScroll from '../motion/useRevealOnScroll';
 
 function Footer({isOpen, toggleContactModal}) {
@@ -23,7 +22,7 @@ function Footer({isOpen, toggleContactModal}) {
                     <GridItem as='div' col='2 / span 4' row='4 / span 2' className='footer_content_wrapper'>
                         <Container as='div' direction='row' gap='xl' maxWidth='full' className='footer_image_container'>
                             <ImageWrapper className='footer_portrait_wrapper'>
-                                <Image src={im} alt='a more serious headshot' variant='cover' width='240'/>
+                                <Image src={`${me[6].media.images[0].url}`} alt={`${me[6].media.images[0].alt_text}`} variant='cover' width='240'/>
                             </ImageWrapper>
                             <Paragraph level='sm' id='kern-md' className='footer_main_text'>{`${me[6].bio}`}</Paragraph>
                         </Container>

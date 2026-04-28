@@ -46,7 +46,7 @@
     "project_description": "A lightweight, un-opinionated, context-agnostic React.js component library composed of expected element and layout primitives. This library is open source and being worked on, with the intention to create a component library that offers a decent amount of flexibility, reusability, and expected behaviours. There are many component libraries out there, but this library helps to reduce dependencies on external libraries and projects that could otherwise result in potential crashes on updates or unexpected layout or behaviour changes.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/portfolio_hero_image.png", "alt_text": "react alt text"}
+            {"type": "hero", "url": "/images/mattkleyn_hero_placeholder.png", "alt_text": "A laptop sitting ontop of a polished concrete floor with large brass service pipes in the background, displaying a UI mockup of a program created using the Mattkleyn component library."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -84,7 +84,7 @@
     "project_description": "A Python based ETL pipeline that extracts and persists job postings from online job posting sites. A multi-phased rollout that is currently in the MVP phase, featuring a CLI UI, data persistence, and a single web scraper pipeline.  Later iterations will include LLM API calls to make use of semantic extraction, filtering, and data normalization. Further additions include a Python Flask web UI with user profiles and authentication, multi site extraction,  email digest,  automated job application workflows, and potential upskilling recommendations.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/JoSe hero.png", "alt_text": "jose alt text"}
+            {"type": "hero", "url": "/images/jose_hero_placeholder.png", "alt_text": "A laptop and tablet sitting on a rustic looking shelf surrounded by nik naks, displaying a UI mockup of the JoSe program."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -141,7 +141,7 @@
     "project_description": "A series of experiments in a collaborative setting to replicate existing websites using Webflow – a no/low code web builder tool. The premise was to replicate existing sites to focus on technical implementation across various philosophies, namely a standard approach, Finsweets Clients-First Framework, and Lumos. The replicas include the site layouts, responsive layouts, motion design, and CMS integration where applicable. In total four replica sites were created across a span of 6 to 7 months.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/Solvance_hero_image.png", "alt_text": "solv alt text"}
+            {"type": "hero", "url": "/images/webflow_replica_placeholder.png", "alt_text": "Two desktop monitors sitting next to each other, each displaying a different replica from the project."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -186,7 +186,7 @@
     "project_description": "The Dev Frog Blog is a multi-user blog platform where users can view various posts, create their own blog posts, and edit their own posts as required. Posts are categorized by the creator, making it easy to find and connect with related ideas and domains. The visual layout is reminiscent of a newspaper, with a large image ‘above-the-fold’ and text content organized into a columnar layout, the Dev Frog Blog brings bridges the gap between traditional editorial experience and more modern digital experiences.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/Blog_hero_concept.png", "alt_text": "frogalt text"}
+            {"type": "hero", "url": "/images/dev_frog_blog_hero_placeholder.png", "alt_text": "A laptop sitting atop a large rock deep in the forest, displaying a UI mockup of the dev frog blog platform."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}

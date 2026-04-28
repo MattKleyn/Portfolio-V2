@@ -4,7 +4,18 @@
     "fname": "Matthew",
     "lname": "Kleynhans",
     "job": "Full-stack Web Developer",
-    "description": "I design and build end-to-end web systems with an architectural mindset — extensible, maintainable, and crafted with the human intention missing from AI‑generated work."
+    "country": ["Johannesburg", "South Africa"],
+    "available_for": ["Fulltime position", "Freelance work"],
+    "description": "I design and build end-to-end web systems with an architectural mindset — extensible, maintainable, and crafted with the human intention missing from AI-generated work.",
+    "media": {
+      "images": [
+        {
+          "type": "hero",
+          "url": "/images/hero_placeholder.png ",
+          "alt_text": "A dramatic image of a person who is holding the past held in their left hand and their present in the right hand, looking toward an uncertain future."
+        }
+      ] 
+    }
   },
 
   {
@@ -48,31 +59,54 @@
   {
     "section": "about",
     "heading": "About",
-    "subHeading": "Why I transitioned into tech",
-    "summary": "In a personal capacity, something short — a quick hi from me as a person. You can read more about my backstory and journey through the link.",
+    "media": {
+      "images": [
+        {
+          "type": "main",
+          "url": "/images/about_main_image_placeholder.png",
+          "alt_text": "A stil-life scene showing physical depictions of some of my hobbies."
+        },
+        {
+          "type": "modal_hero",
+          "url": "/images/about_modal_placeholder.jpg",
+          "alt_text": "A photo of me being a silly goose."
+        }
+      ]
+    },
+    "subHeading": "A short bio",
+    "summary": "I worked in a managerial position within the SA construction industry for several years before deciding to pivot to tech. The decision was not easy, but necessary. This is my journey.",
     "bio": [
       { 
         "bodyHeading": "Early career",
-        "paragraph": "After graduating from university in 2015, I began my career as a Site Engineer with one of South Africa's Big 5 construction firms. In this onsite management role, I was responsible for translating consultant designs into reality, coordinating multidisciplinary teams, and ensuring quality standards were met across diverse project environments."
+        "paragraph": "I studied at the University of the Witwatersrand and spent several years in construction management - a role that strengthened my systems thinking, planning, and resource coordination. Working across multiple processes gave me an end-to-end view of how complex environments operate, but I eventually realised I wanted more room to think, experiment, and build."
       },
       { 
-        "bodyHeading": "The initial spark",
-        "paragraph": "Each site introduced new workflows, documentation styles, and technologies—many of which were inconsistent, inefficient, or poorly suited to real-world conditions. These recurring frustrations resulted in me saying to my teams: “One day, I'm going to build an app that actually works for us onsite.” That idea stayed with me and thus the seeds were planted, however I could not find the time to learn how to code and make my own software solution."
+        "bodyHeading": "Initial spark",
+        "paragraph": "That curiosity led me into full-stack development. Software gives me the freedom to explore UI design, motion systems, architecture, and the broader mechanics of how things fit together. It's a space where I can grow both technically and creatively, and where my natural inclination toward systems thinking actually becomes an advantage."
       },
       {
-        "bodyHeading": "Self (re)discovery",
-        "paragraph": "After eight years in construction management, I took a step back to recalibrate. What followed was a period of deep reflection, experimentation, and growth. I explored art, design, agriculture, and trading—but I eventually returned to that original idea and began learning to code. Since then, I've immersed myself in programming fundamentals, frontend and backend development, UX/UI design, accessibility, and no-code tools. What started as curiosity has evolved into a clear career direction: software development with a focus on thoughtful, user-centered systems."
+        "bodyHeading": "Current standing",
+        "paragraph": "While my current focus is full-stack web development, I'm actively expanding into adjacent areas — data analysis and representation, machine learning systems, embedded hardware, and even game design. I see myself less as a niche specialist and more as a problem-solver: someone who can break down complexity, learn quickly, and adapt across contexts while continuously improving my craft."
       },
       {
-        "bodyHeading": "Where I currently stand",
-        "paragraph": "My current strengths lie in Frontend Design and Development, but I'm actively expanding toward full-stack capabilities and machine learning integration to better understand and assist the user experience. I bring with me a wealth of transferable experience—strategic planning, systems thinking, multi-disciplinary coordination, change management and constructability analysis. It's an ambitious goal, it's long term, It demands grit and growth…it's my goal. And this goal will enable me to finally make that app I wanted to make for so long"
+        "bodyHeading": "Outside of work",
+        "paragraph": "Outside of work, I cycle, read, and explore a rotating set of interests — the kind of things that keep my curiosity sharp and my perspective broad."
       }
     ]
   },
 
   {
     "section": "footer",
-    "cta": "Have a great idea you wish to bring to life? Reach out, let’s collaborate!",
+    "cta": "Have a great idea you wish to bring to life? Reach out, let's collaborate!",
+    "media": {
+      "images": [
+        {
+          "type": "portrait",
+          "url": "/images/footer_portrait_placeholder.png",
+          "alt_text": "A professional looking headshot of myself."
+        }
+      ]
+    },
     "bio": "I am a full-stack developer based mainly in the PERN stack (PostgreSQL, Express, React, Node). This enables me to build entire webapps end to end and have full control over the entire process. Whether I'm building simple static HTML + CSS sites or fully dynamic React SPAs with user authentication, I craft the best system in my ability. While mainly dealing with the web stack, I also have experience building ETL pipelines and web apps with Python. These data-heavy builds give me a wide range in the projects I am able to take on.",
     "links": {
       "linkedin": "https://linkedIn/profile",

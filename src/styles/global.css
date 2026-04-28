@@ -941,7 +941,8 @@ html {
     height: 100%;
     
     img {
-        object-position: 100% 35%;
+        /* object-position: 100% 35%; */
+        max-width: 20rem;
     }
 }
 

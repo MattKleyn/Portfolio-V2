@@ -1,6 +1,5 @@
 import {ModalRoot,GridContainer, GridItem, Button, Container, Paragraph, Heading, ImageWrapper, Image} from '@mattkleyn/component-library';
 import me from '../data/me.json';
-import jam from '../assets/images/placeholder_about.jpg';
 
 function ReadMoreModal({isModalOpen, toggleModal}) {
 
@@ -14,7 +13,7 @@ function ReadMoreModal({isModalOpen, toggleModal}) {
                 </GridItem>
                 <GridItem as='div' col='4 / span 6' row='2 / span 3'>
                     <ImageWrapper className='about_me_modal_image_wrapper'>
-                        <Image src={jam} alt='placehoder image' variant='cover'/>
+                        <Image src={`${me[5].media.images[1].url}`} alt={`${me[5].media.images[1].alt_text}`} variant='cover'/>
                     </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col='4 / span 6' row='5 / span 5'>
