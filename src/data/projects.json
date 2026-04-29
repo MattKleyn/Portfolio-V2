@@ -1,7 +1,7 @@
 [{
-    "key": "cool_new_project",
+    "key": "portfolio_react_migration",
     "is_featured": false,
-    "project_title": "Cool new project",
+    "project_title": "Portfolio React Migration",
     "project_description": "just a cool new project to test my conditional rendering",
     "media": {
         "images": [
@@ -12,9 +12,8 @@
         ]
     },
     "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
+        {"type": "github", "url": "https://github.com/MattKleyn/Portfolio-V2"},
+        {"type": "linkedin", "url": "link2"}
     ],
     "case_study": [
     {"type": "pill", "content": ["HTML", "CSS", "Javascript", "React.js"]},
@@ -53,9 +52,9 @@
         ]
     },
     "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
+        {"type": "github", "url": "https://github.com/MattKleyn/mattkleyn-component-library"},
+        {"type": "linkedin", "url": "https://www.linkedin.com/search/results/all/?keywords=%23mattkleyncomponentlibrary&origin=HASH_TAG_FROM_FEED"},
+        {"type": "npm", "url": "https://www.npmjs.com/package/@mattkleyn/component-library"}
     ],
     "case_study": [
     {"type": "pill", "content": ["HTML", "CSS", "Javascript", "React.js"]},
@@ -91,9 +90,8 @@
         ]
     },
     "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
+        {"type": "github", "url": "https://github.com/MattKleyn/JoSe_Job_Seach_Automatron"},
+        {"type": "linkedin", "url": "https://www.linkedin.com/search/results/all/?keywords=%23jose_project&origin=HASH_TAG_FROM_FEED"}
     ],
     "case_study": [
     {"type": "pill", "content": ["Python", "PostgreSQL"]},
@@ -148,9 +146,9 @@
         ]
     },
     "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
+        {"type": "General Intelligence", "url": "https://preview.webflow.com/preview/matthews-stupendous-site-09c137?utm_medium=preview_link&utm_source=designer&utm_content=matthews-stupendous-site-09c137&preview=2e29e1d3721c84bd8fed760aba33f39c&workflow=preview"},
+        {"type": "OH Architecture", "url": "https://preview.webflow.com/preview/matt-ks-oh-architecture-replica-site?utm_medium=preview_link&utm_source=designer&utm_content=matt-ks-oh-architecture-replica-site&preview=76a3012de4432ed9883e379ca6f63ad0&workflow=preview"},
+        {"type": "Solvance", "url": "https://preview.webflow.com/preview/solvance-mastercopy-055a51?utm_medium=preview_link&utm_source=designer&utm_content=solvance-mastercopy-055a51&preview=cd3c9a2b23b8e672373c75c0089c2acb&workflow=preview"}
     ],
     "case_study": [
     {"type": "pill", "content": ["Webflow", "Webflow CMS", "Client-First", "Lumos"]},
@@ -193,9 +191,8 @@
         ]
     },
     "project_links": [
-        {"type": "github", "url": "link1"},
-        {"type": "linkedin", "url": "link2"},
-        {"type": "live", "url": "link3"}
+        {"type": "github", "url": "https://github.com/MattKleyn/Frog-Blog"},
+        {"type": "linkedin", "url": "https://www.linkedin.com/search/results/all/?keywords=%23devfrogblog&origin=HASH_TAG_FROM_FEED"}
     ],
     "case_study": [
     {"type": "pill", "content": ["HTML", "CSS", "Javascript", "EJS", "Node.js", "Express.js", "PostgreSQL", "OAuth", "UX/UI"]},

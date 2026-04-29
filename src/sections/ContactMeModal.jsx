@@ -14,7 +14,7 @@ function ContactMeModal({isOpen, toggleContactModal}) {
                     <Container as='div' direction='column' gap='lg'>
                         <Paragraph level='lg' className="contact_me_modal_text">OOPS!</Paragraph>
                         <Paragraph level='lg' className="contact_me_modal_text">This modal is currently under maintainance, you can contact me using the link below. Apologies for any inconvenience this may have caused.</Paragraph>
-                        <Link href={me[6].links['linkedin']} className="contact_me_modal_link">LinkedIn</Link>
+                        <Link href={me[6].links['linkedin']} target="_blank" className="contact_me_modal_link">LinkedIn</Link>
                     </Container>
                 </GridItem>
                 <GridItem as='div' col='2 / span 2' row='6 / span 1'>

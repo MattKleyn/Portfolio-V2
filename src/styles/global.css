@@ -484,6 +484,15 @@ html {
 
 .hero_socials {
     align-items: center;
+    height: 24px;
+
+    a {
+        height: 100%;
+        
+        & > img {
+            filter: invert(27%) sepia(10%) saturate(100%) hue-rotate(200deg);
+        }
+    }
 }
 
 /* .hero_image_container {

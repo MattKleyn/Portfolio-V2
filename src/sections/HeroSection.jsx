@@ -54,9 +54,9 @@ function HeroSection() {
                             <Paragraph level="md" className='hero_value_statement'>{`${me[0].description}`}</Paragraph>
                         </Container>
                         <Container as='div' direction='row' gap='md' className='hero_socials'>
-                            <Link href="www.google.com" target="_blank"><Image src={linkedinIcon} alt='open tab to LinkedIn profile' className='hero_social_icon button' variant='icon'/></Link>
-                            <Link href="www.google.com" target="_blank"><Image src={githubIcon} alt='open tab to Github profile' className='hero_social_icon button' variant='icon'/></Link>
-                            <Link href="www.google.com" target="_blank"><Image src={fiverrIcon} alt='open tab to Fiverr profile' className='hero_social_icon button' variant='icon'/></Link>
+                            <Link href={`${me[6].links.linkedin}`} target="_blank"><Image src={linkedinIcon} alt='open tab to LinkedIn profile' className='hero_social_icon button' variant='icon'/></Link>
+                            <Link href={`${me[6].links.github}`} target="_blank"><Image src={githubIcon} alt='open tab to Github profile' className='hero_social_icon button' variant='icon'/></Link>
+                            <Link href={`${me[6].links.fiverr}`} target="_blank"><Image src={fiverrIcon} alt='open tab to Fiverr profile' className='hero_social_icon button' variant='icon'/></Link>
                         </Container>
                     </Container>
                 </GridItem>

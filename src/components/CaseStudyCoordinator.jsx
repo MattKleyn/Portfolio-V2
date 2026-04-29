@@ -53,7 +53,7 @@ function CaseStudyCoordinator({project}) {
                     <Container as='div' direction='column' gap='md' maxWidth='full' className='case_study_links_container'>
                         {project.project_links.map((link, index) => {
                             return (
-                            <Link key={index} href={link.url}>
+                            <Link key={index} href={link.url} target="_blank">
                                 <Paragraph level='md'>
                                     {link.type}
                                 </Paragraph>
