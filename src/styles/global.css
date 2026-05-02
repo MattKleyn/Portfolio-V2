@@ -479,7 +479,7 @@ html {
 }
 
 .hero_value_statement {
-    width: 20rem;
+    max-width: 20rem;
 }
 
 .hero_socials {
@@ -504,6 +504,39 @@ html {
     height: 100%;
     object-position: 100% 80%;
  }
+
+
+@media screen and (max-width: 991px) {
+    .hero_grid {
+        --grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hero_gridwrap_img {
+        --grid-col: 1 / span 6;
+    }
+
+    .hero_gridwrap_job {
+        --grid-col: 5 / span 2;
+    }
+
+    .hero_gridwrap_fullname {
+        --grid-col: 1 / span 3;
+        --grid-row: 3 / span 2;
+    }
+
+    .role_wrapper {
+        --grid-col: 1 / span 2;
+    }
+
+    .based_in_wrapper {
+        --grid-col: 3 / span 2;
+    }
+
+    .available_for_wrapper {
+        --grid-col: 5 / span 2;
+    }
+}
+ 
 
  /*──────────────────────────────
   TAGLINE SECTION
@@ -974,6 +1007,10 @@ html {
     letter-spacing: var(--kerning-lg);
 }
 
+.tagline_container {
+    flex-wrap: wrap;
+}
+
 .footer_tagline {
     align-content: flex-end;
 }
@@ -999,4 +1036,8 @@ html {
 .footer_links_container .footer_link:hover {
     box-shadow: none;
     border-bottom: 1px solid var(--color-neutral);
+}
+
+@media screen and (max-width: 991px) {
+    
 }

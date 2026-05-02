@@ -18,7 +18,7 @@ function HeroSection() {
                         <Image src={`${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero-3'/>
                     </ImageWrapper>
                 </GridItem>
-                <GridItem as='div' col="6 / span 2" row='2 / span 1'>
+                <GridItem as='div' col="6 / span 2" row='2 / span 1' className='role_wrapper'>
                     <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
                         <Paragraph level='md'>
                             /role
@@ -28,24 +28,34 @@ function HeroSection() {
                         </Paragraph>
                     </Container>
                 </GridItem>
-                <GridItem as='div' col="8 / span 2" row='2 / span 1'>
+                <GridItem as='div' col="8 / span 2" row='2 / span 1' className='based_in_wrapper'>
                     <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
                         <Paragraph level='md'>
                             /based_in
                         </Paragraph>
-                        <Paragraph level='md'>
-                            {`${me[0].country}`}
+                        <Container as='div' direction='column' gap='none'>
+                            <Paragraph level='md'>
+                            {`${me[0].country[0]}`},
                         </Paragraph>
+                        <Paragraph level='md'>
+                            {`${me[0].country[1]}`}
+                        </Paragraph>
+                        </Container>
                     </Container>
                 </GridItem>
-                <GridItem as='div' col="10 / span 2" row='2 / span 1'>
+                <GridItem as='div' col="10 / span 2" row='2 / span 1' className='available_for_wrapper'>
                     <Container as='div' direction='column' gap='sm' className='l3-reveal-hero'>
                         <Paragraph level='md'>
                             /available_for
                         </Paragraph>
-                        <Paragraph level='md'>
-                            {`${me[0].available_for}`}
+                        <Container as='div' direction='column' gap='none'>
+                            <Paragraph level='md'>
+                            {`${me[0].available_for[0]}`},
                         </Paragraph>
+                        <Paragraph level='md'>
+                            {`${me[0].available_for[1]}`}
+                        </Paragraph>
+                        </Container>
                     </Container>
                 </GridItem>
                 <GridItem as='div' col="10 /span 3" row="3 / span 2" className='hero_gridwrap_job'>
