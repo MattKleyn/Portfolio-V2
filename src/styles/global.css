@@ -610,7 +610,7 @@ html {
     line-height: 1;
 }
 
-.values {
+.values_wrapper {
     align-content: center;
 }
 
@@ -628,6 +628,45 @@ html {
 
 .values_titles.values_titles {
     font-weight: var(--font-weight-md);
+}
+
+@media screen and (max-width: 991px) {
+    .section_value_proposition {
+        padding-inline: var(--space-lg);
+        .value_grid {
+            --grid-template-columns: repeat(6, minmax(0, 1fr));
+            --grid-template-rows: repeat(11, minmax(0, 1fr));
+        }
+
+        .problem_statement_wrapper {
+            --grid-col: 2 / span 3;
+            --grid-row: 1 / span 3;
+            min-width: 0;
+        min-height: 0;   
+        }
+
+        .heading_wrapper {
+            --grid-col: 1 / span 3;
+            --grid-row: 5 / span 2;
+            min-width: 0;
+            min-height: 0;   
+        }
+
+        .values_wrapper {
+            --grid-col: 2 / span 5;
+            --grid-row: 7 / span 4;
+            min-width: 0;  
+            min-height: 0;   
+        }
+
+        .button_wrapper {
+            --grid-col: 5 / span 2;
+            --grid-row: 11 / span 1;
+            min-width: 0;
+            min-height: 0;   
+        }
+
+    }
 }
 
 /*──────────────────────────────
