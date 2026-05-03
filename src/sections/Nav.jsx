@@ -50,7 +50,7 @@ function Nav({isOpen, toggleContactModal}) {
                 {isMenuOpen && (
                     <Portal>
                         <NavOverlay onClick={closeMenu} className='nav_overlay'>
-                            <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
+                            <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='nav_overlay_grid'>
                                 <GridItem onClick={closeMenu} as='div' col='10 / span 1' row='1 / span 1' className='nav_overlay_close_container'>
                                     {isMenuOpen && (<Button as='button' className='nav_close_toggle'>Close</Button>)}
                                 </GridItem>
@@ -63,7 +63,7 @@ function Nav({isOpen, toggleContactModal}) {
                                         <Button as="button" className='nav_overlay_section_heading' onClick={handleContactFromOverlay}>Get in touch</Button>
                                     </NavMenu>
                                 </GridItem>
-                                <GridItem as='div' col='3 / span 1' row='1 / span 1' >
+                                <GridItem as='div' col='3 / span 1' row='1 / span 1' className='nav_overlay_image_wrapper'>
                                     <ImageWrapper>
                                         <Image src={Logo} alt='Brand Logo inverted' className='nav_menu_overlay_logo'/>
                                     </ImageWrapper>

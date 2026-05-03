@@ -19,15 +19,20 @@ html {
   NAV SECTION
 ──────────────────────────────*/
 .nav_root {
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 }
 
 .nav_bar {
-    width: 1200px;
+    width: 100%;
     justify-content: space-between;
     height: 100%;
     overflow: visible;
+}
+
+/*combo class to prevent dock behaviour override*/
+.nav_root .nav_bar {
+    padding-inline: var(--space-lg);
 }
 
 .nav_menu {
@@ -127,6 +132,14 @@ html {
     background: var(--color-black);
     z-index: 99999999999999999999999999999999;
 
+    .nav_overlay_grid {
+        height: 100%;
+    }
+
+    .image_wrapper {
+        align-content: end;
+    }
+
     .nav_overlay_close_container {
         align-content: end;
     }
@@ -136,17 +149,16 @@ html {
         line-height: calc(var(--font-size-lg) * 1.6);
         color: var(--color-neutral);
         background-color: transparent;
-        padding-block: var(--space-xs);
-        padding-inline: 0px;
-        border: none;
-        border-bottom: 1px solid var(--color-black);
+        padding-block: var(--space-sm);
+        padding-inline: var(--space-md);
+        border: 1px solid var(--color-neutral);
         transition: 
-            color var(--motion-duration-easy) var(--motion-ease-decelerate),
-            border-bottom var(--motion-duration-easy) var(--motion-ease-decelerate);
+            color var(--motion-duration-standard) var(--motion-ease-decelerate),
+            border var(--motion-duration-standard) var(--motion-ease-decelerate);
     }
 
     .nav_close_toggle:hover {
-        border-bottom: 1px solid var(--color-white);
+        border: 1px solid var(--color-white);
         color: var(--color-white);
     }
 
@@ -165,6 +177,7 @@ html {
         font-size: var(--font-size-4xl);
         line-height: calc(var(--font-size-3xl) * 1.6);
         text-align: left;
+        text-wrap: nowrap;
         transition: 
             color var(--motion-duration-slow) var(--motion-ease-decelerate),
             scale var(--motion-duration-slow) var(--motion-ease-decelerate),
@@ -212,6 +225,31 @@ html {
     .nav_overlay_link:active {
         box-shadow: none;
         scale: var(--motion-scale-press);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav_overlay {
+        .nav_overlay_grid {
+            --grid-template-columns: repeat(6, 1fr);
+        }
+
+        .nav_overlay_close_container {
+            --grid-col: 6 / span 1;
+        }
+
+        .nav_overlay_heading_wrapper {
+            --grid-col: 2 / span 4;
+        }
+
+        .nav_overlay_image_wrapper {
+            --grid-col: 2 / span 1;
+        }
+
+        .nav_overlay_links_wrapper {
+            --grid-col: 6 / span 1;
+        }
+
     }
 }
 
