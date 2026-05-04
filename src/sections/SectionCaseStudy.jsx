@@ -11,8 +11,8 @@ function SectionCaseStudy({project}) {
     return (
         <div>
             <Section as='section' maxWidth='full' className='section_case_study'>
-                <GridContainer as='div' columns='repeat(12,1fr)' rows='repeat(2,auto)' gap='lg'>
-                    <GridItem as='div' col='6 / span 6' row='1 / span 1'>
+                <GridContainer as='div' columns='repeat(12,1fr)' rows='repeat(2,auto)' gap='lg' className='case_study_grid'>
+                    <GridItem as='div' col='6 / span 7' row='1 / span 1' className='case_study_heading_wrapper'>
                         <Container as='div' direction='row' gap='md' maxWidth='full' className='case_study_heading_container'>
                             <Heading level='h2' >{`${me[3].heading[0]}`} <span class='heading_sm'>{`${me[3].heading[1]}`}</span></Heading>
                         </Container>
@@ -40,7 +40,7 @@ function SectionCaseStudy({project}) {
                     </GridItem>
 
 
-                    <GridItem as='div' col='6 / span 5' row='2 / span 1' >
+                    <GridItem as='div' col='6 / span 5' row='2 / span 1'  className='case_study_content_wrapper'>
                         <CaseStudyCoordinator project={project}></CaseStudyCoordinator>
                     </GridItem>
                 </GridContainer>
