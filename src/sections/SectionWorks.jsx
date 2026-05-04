@@ -13,6 +13,7 @@ function SectionWorks() {
     const { isTablet, isMobile } = useBreakpoint();
 
     const layoutMap = isMobile ? worksLayouts.mobile : isTablet ? worksLayouts.tablet : worksLayouts.desktop;
+    console.log("layoutmap: ", layoutMap);
 
     const featuredProjects = projectsArray.filter(project => project.is_featured);
         
@@ -34,7 +35,7 @@ function SectionWorks() {
                         }
                         
                         return (
-                            <GridItem as='div' col={layout.column} row={layout.row}>
+                            <GridItem as='div' col={layout.col} row={layout.row}>
                                 <RouterLink to={`/project/${project.key}`}>
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1' className='project_card_image_wrapper'>

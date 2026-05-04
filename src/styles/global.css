@@ -676,11 +676,15 @@ html {
     height: 100vh;
 }
 
+.build_grid {
+    height: 100%;
+}
+
 .build_wrapper {
     align-content: center;
 }
 
-.heading_build {
+.build_heading {
     text-wrap-mode: nowrap;
 }
 
@@ -696,11 +700,41 @@ html {
     min-width: 406px;
 }
 
+@media screen and (max-width: 991px) {
+    .section_build.section_build {
+        padding-inline: var(--space-lg);
+    }
+
+    .build_grid {
+        --grid-template-columns: repeat(6, 1fr);
+        --grid-template-rows: repeat(7, 1fr);
+    }
+
+    .build_heading_wrapper {
+        --grid-col: 1 / span 4;
+        --grid-row: 2 / span 1;
+    }
+
+    .build_heading.build_heading {
+        text-align: left;
+    }
+
+    .build_wrapper {
+        --grid-col: 1 / span 6;
+        --grid-row: 3 / span 5;
+    }
+
+    .build_card.build_card {
+        flex-direction: column;
+    }
+}
+
 /*──────────────────────────────
   WORKS SECTION
 ──────────────────────────────*/
-.section_works{
+.section_works.section_works {
     height: 100vh;
+    /* padding-inline: var(--space-lg); */
 }
 
 .works_grid {
