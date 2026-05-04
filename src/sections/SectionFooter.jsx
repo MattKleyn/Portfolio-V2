@@ -8,13 +8,13 @@ function Footer({isOpen, toggleContactModal}) {
     return (
         <footer>
             <Section as='section' maxWidth='full' className='section_footer'>
-                <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg'>
-                    <GridItem as='div' col='4 / span 6' row='2 / span 1' >
+                <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='footer_grid'>
+                    <GridItem as='div' col='4 / span 6' row='2 / span 1' className='footer_cta_wrapper'>
                         <Container as='div' direction='inline' maxWidth='full' className='footer_cta_container'>
                             <Heading level='h3' className='footer_cta_text l2-reveal-heading'>{`${me[6].cta}`}</Heading>
                         </Container>
                     </GridItem>
-                    <GridItem as='div' col='9 / span 2' row='3 / span 1'>
+                    <GridItem as='div' col='9 / span 2' row='3 / span 1' className='footer_button_wrapper'>
                         <Button className='button_primary_container' onClick={toggleContactModal}>
                             <Paragraph level='lg' className='button_primary_text'>Get in touch</Paragraph>
                         </Button>
@@ -27,7 +27,7 @@ function Footer({isOpen, toggleContactModal}) {
                             <Paragraph level='sm' id='kern-md' className='footer_main_text'>{`${me[6].bio}`}</Paragraph>
                         </Container>
                     </GridItem>
-                    <GridItem as='div' col='9 / span 4' row='5 / span 1' className='footer_tagline'>
+                    <GridItem as='div' col='9 / span 4' row='5 / span 1' className='footer_tagline_wrapper'>
                         <Container as='div' direction='row' gap='sm' maxWidth='full' className='tagline_container'>
                             <Paragraph level='lg' className='tagline_text'>{`${me[1].statement[0]}`}</Paragraph>
                             <Paragraph level='lg' className='tagline_text'>{`${me[1].statement[1]}`}</Paragraph>
