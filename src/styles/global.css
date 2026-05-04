@@ -709,9 +709,13 @@ html {
 
 .project_card { 
     height: 100%; 
+
+    /* .project_card_wrapper {
+        height: 100%;
+    } */
 }
 
-.project_card_heading_container { 
+.project_card_heading_wrapper { 
     padding: var(--space-md); 
     display: flex; 
     align-items: end;
@@ -721,7 +725,7 @@ html {
     color: var(--color-white);
 }
 
-.project_card_text_container { 
+.project_card_text_wrapper { 
     padding: var(--space-md); 
     display: flex; 
     justify-content: end;
@@ -765,8 +769,19 @@ html {
     --project-card-overlay-color: var(--color-overlay--active);
 }
 
-.project_card_image-wrapper {
+.project_card_image_container {
   height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .works_grid {
+        --grid-template-columns: repeat(6, 1fr);
+        --grid-template-rows: repeat(7, 1fr);
+
+        .works_heading_wrapper {
+            --grid-col: 1 / span 5;
+        }
+    }
 }
 
 /*──────────────────────────────
