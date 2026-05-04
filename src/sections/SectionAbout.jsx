@@ -10,7 +10,7 @@ function SectionAbout({isModalOpen, toggleModal}) {
         <div>
             <Section as='section' id='section_about' maxWidth='full' className='section_about'>
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='about_grid'>
-                    <GridItem as='div' col='7 / span 3' row='2 / span 1'>
+                    <GridItem as='div' col='7 / span 3' row='2 / span 1' className='about_heading_wrapper'>
                         <Container as='div' direction='inline' gap='md' className='about_heading_container'>
                             <Heading level='h2' className='about_heading l2-reveal-heading'>{`${me[5].heading}`}</Heading>
                         </Container>
@@ -20,7 +20,7 @@ function SectionAbout({isModalOpen, toggleModal}) {
                             <Image src={`${me[5].media.images[0].url}`} alt={`${me[5].media.images[0].alt_text}`} height='600' variant='cover' className='about_image l2-reveal-image'/>
                         </ImageWrapper>
                     </GridItem>
-                    <GridItem as='div' col='7 / span 4' row='3 / span 3'>
+                    <GridItem as='div' col='7 / span 4' row='3 / span 3' className='about_text_wrapper'>
                         <Container as='div' direction='column' gap='lg' className='about_text_container'>
                             <Heading level='h6' className='l2-reveal-heading'>{`${me[5].subHeading}`}</Heading>
                             <Paragraph level='md'>{`${me[5].summary}`}</Paragraph>
