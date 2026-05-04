@@ -11,12 +11,12 @@ function ReadMoreModal({isModalOpen, toggleModal}) {
                         <Paragraph level='lg' className='button_primary_text'>Close</Paragraph>
                     </Button>
                 </GridItem>
-                <GridItem as='div' col='4 / span 6' row='2 / span 3'>
-                    <ImageWrapper className='about_me_modal_image_wrapper'>
+                <GridItem as='div' col='4 / span 6' row='2 / span 3' className='about_me_modal_image_wrapper'>
+                    <ImageWrapper className='about_me_modal_image_container'>
                         <Image src={`${me[5].media.images[1].url}`} alt={`${me[5].media.images[1].alt_text}`} variant='cover'/>
                     </ImageWrapper>
                 </GridItem>
-                <GridItem as='div' col='4 / span 6' row='5 / span 5'>
+                <GridItem as='div' col='4 / span 6' row='5 / span 5' className='about_me_modal_content_wrapper'>
                     <Container as='div' direction='column' gap='lg' maxWidth='full'>
                         {me[5].bio.map((item, index ) => (
                             <Container as='div' direction='column' gap='md' maxWidth='full' key={index}>
