@@ -3,7 +3,6 @@ import Collaborators from './Collaborators';
 import im from '../assets/images/placeholder_project_image.png';
 
 function CaseStudyCoordinator({project}) {
-
         const COMPONENT_MAP = {
             pill: (item) => (
                 <Container as='div' direction='row' gap='md' className='pill_container'>
@@ -46,8 +45,8 @@ function CaseStudyCoordinator({project}) {
     return (
         <div>
             <Container as='div' direction='column' gap='none' maxWidth='full' className='case_study_container'>
-                <Container as='div' direction='row' gap='lg' maxWidth='full'>
-                    <ImageWrapper className='case_study_image_wrapper'>
+                <Container as='div' direction='row' gap='lg' maxWidth='full' className='case_study_image_wrapper'>
+                    <ImageWrapper className='case_study_image_container'>
                         <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} className='case_study_hero_image'/>
                     </ImageWrapper>
                     <Container as='div' direction='column' gap='md' maxWidth='full' className='case_study_links_container'>

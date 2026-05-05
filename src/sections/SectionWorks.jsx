@@ -21,7 +21,7 @@ function SectionWorks() {
         <div>
             <Section as='section' id='section_works' maxWidth='full' className='section_works'>
                 <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' gap='lg' className='works_grid'>
-                    <GridItem as='div' col='7 / span 6' row='1 / span 1' className='works_heading_wrapper'>
+                    <GridItem as='div' col='6 / span 7' row='1 / span 1' className='works_heading_wrapper'>
                         <Container as='div' direction='inline'>
                             <Heading level='h2' className='l2-reveal-heading'>{`${me[3].heading[0]}`}<span className='heading_sm'>{me[3].heading[1]}</span></Heading>
                         </Container>

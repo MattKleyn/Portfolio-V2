@@ -20,6 +20,8 @@ border tokens
     --font-weight-sb: 500;
     --font-weight-bk: 600;
 
+    --font-size-nav_overlay: clamp(2.5rem, 4vw, 4rem);
+
     /*──────────────────────────────
     MOTION TOKENS
     ──────────────────────────────*/

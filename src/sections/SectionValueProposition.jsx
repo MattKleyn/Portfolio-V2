@@ -15,7 +15,7 @@ function SectionValueProposition ({isOpen, toggleContactModal}) {
                             <Paragraph level='md' className='solution_statement l2-reveal-paragraph'>{`${me[2].solution}`}</Paragraph>
                         </Container>
                     </GridItem>
-                    <GridItem as='div' col='2 / span 4' row='4 / span 2' className='heading_wrapper'>
+                    <GridItem as='div' col='2 / span 5' row='4 / span 2' className='heading_wrapper'>
                         <Container as='div' direction='column' gap='sm' maxWidth='full'>
                             <Heading level='h2' className='l2-reveal-heading'>{`${me[2].heading[0]}`}<span className='heading_sm'>{`${me[2].heading[1]}`}</span></Heading>
                             <Paragraph level='md' className='why_me' >{`${me[2].why_me}`}</Paragraph>

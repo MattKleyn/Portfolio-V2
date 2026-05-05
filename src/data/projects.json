@@ -41,7 +41,7 @@
 {
     "key": "matt_kleyn_component_library",
     "is_featured": true,
-    "project_title": "MattKleyn React Component Library",
+    "project_title": "MattKleyn Component Library",
     "project_description": "A lightweight, un-opinionated React.js component library comprised of element and layout primitives. The components are designed to be context agnostic and flexible while still having simple APIs. The primitives are polymorphic, able to be rendered as differing HTML element while also having variants within the same elements. These components include base CSS styles with low specificity to be easily overridden by the consuming apps making it easy to adjust to any style and context. This library is open source and under active development, however the current version is stable and available for download via the NPM registry.",
     "media": {
         "images": [
