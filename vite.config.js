@@ -7,5 +7,6 @@ export default defineConfig({
   resolve: {
     dedupe: ['react', 'react-dom'],
   },
-  logLevel: 'info'
+  logLevel: 'info',
+  base: "/<Portfolio-V2>/",
 })
