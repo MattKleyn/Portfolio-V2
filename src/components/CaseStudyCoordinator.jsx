@@ -20,12 +20,12 @@ function CaseStudyCoordinator({project}) {
             callout: (item) => <Callout variant={item.variant} className='case_study_callout'>{item.content}</Callout>,
             image: (item) => (
                 <ImageWrapper className='case_study_content_image_wrapper'>
-                    <Image src={item.src} alt={item.alt} variant='contain' className='case_study_content_image'/>
+                    <Image src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt} variant='contain' loading='lazy' className='case_study_content_image'/>
                 </ImageWrapper>
             ),
             figure: (item) => (
                 <Media as={item.type} caption={item.caption} className={`case_study_media_container ${item.classname}`}>
-                    <Image src={item.src} alt={item.alt} variant='contain' className='case_study_media_image'/>
+                    <Image src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt} variant='contain' loading='lazy' className='case_study_media_image'/>
                 </Media>
             ),
             collaborators: (item) => (
