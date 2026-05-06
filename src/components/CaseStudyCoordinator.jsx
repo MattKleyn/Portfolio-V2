@@ -47,7 +47,7 @@ function CaseStudyCoordinator({project}) {
             <Container as='div' direction='column' gap='none' maxWidth='full' className='case_study_container'>
                 <Container as='div' direction='row' gap='lg' maxWidth='full' className='case_study_image_wrapper'>
                     <ImageWrapper className='case_study_image_container'>
-                        <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} className='case_study_hero_image'/>
+                        <Image src={`${import.meta.env.BASE_URL}${project.media.images[0]["url"]}`} alt={project.media.images[0]["alt_text"]} className='case_study_hero_image'/>
                     </ImageWrapper>
                     <Container as='div' direction='column' gap='md' maxWidth='full' className='case_study_links_container'>
                         {project.project_links.map((link, index) => {

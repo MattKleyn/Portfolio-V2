@@ -17,7 +17,7 @@ function SectionAbout({isModalOpen, toggleModal}) {
                     </GridItem>
                     <GridItem as='div' col='1 / span 4' row='3 / span 4' className='about_image_wrapper'> 
                         <ImageWrapper className='about_image_container'>
-                            <Image src={`${me[5].media.images[0].url}`} alt={`${me[5].media.images[0].alt_text}`} height='600' variant='cover' className='about_image l2-reveal-image'/>
+                            <Image src={`${import.meta.env.BASE_URL}${me[5].media.images[0].url}`} alt={`${me[5].media.images[0].alt_text}`} height='600' variant='cover' className='about_image l2-reveal-image'/>
                         </ImageWrapper>
                     </GridItem>
                     <GridItem as='div' col='7 / span 4' row='3 / span 3' className='about_text_wrapper'>

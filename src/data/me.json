@@ -11,7 +11,7 @@
       "images": [
         {
           "type": "hero",
-          "url": "/images/hero_placeholder.png ",
+          "url": "images/hero_placeholder.png",
           "alt_text": "A dramatic image of a person who is holding the past held in their left hand and their present in the right hand, looking toward an uncertain future."
         }
       ] 
@@ -63,12 +63,12 @@
       "images": [
         {
           "type": "main",
-          "url": "/images/about_main_image_placeholder.png",
+          "url": "images/about_main_image_placeholder.png",
           "alt_text": "A stil-life scene showing physical depictions of some of my hobbies."
         },
         {
           "type": "modal_hero",
-          "url": "/images/about_modal_placeholder.jpg",
+          "url": "images/about_modal_placeholder.jpg",
           "alt_text": "A photo of me being a silly goose."
         }
       ]
@@ -102,7 +102,7 @@
       "images": [
         {
           "type": "portrait",
-          "url": "/images/footer_portrait_placeholder.png",
+          "url": "images/footer_portrait_placeholder.png",
           "alt_text": "A professional looking headshot of myself."
         }
       ]

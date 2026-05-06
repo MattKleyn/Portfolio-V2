@@ -15,7 +15,7 @@ function HeroSection() {
             <GridContainer as='div' columns='repeat(12, 1fr)' rows='repeat(6, 1fr)' className='hero_grid'>
                 <GridItem as='div' col="1 / span 12" row="5 / span 2" className='hero_gridwrap_img'>
                     <ImageWrapper className='hero_image_container'>
-                        <Image src={`${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero-3'/>
+                        <Image src={`${import.meta.env.BASE_URL}${me[0].media.images[0].url}`} alt={`${me[0].media.images[0].alt_text}`} width="275" variant='cover' className='hero_image l3-reveal-hero-3'/>
                     </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col="6 / span 2" row='2 / span 1' className='role_wrapper'>

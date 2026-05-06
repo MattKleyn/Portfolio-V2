@@ -6,7 +6,7 @@
     "project_description": "A lightweight, un-opinionated React.js component library comprised of element and layout primitives. The components are designed to be context agnostic and flexible while still having simple APIs. This library is open source and under active development, however the current version is stable and available for download via the NPM registry.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/mattkleyn_hero_placeholder.png", "alt_text": "A laptop sitting ontop of a polished concrete floor with large brass service pipes in the background, displaying a UI mockup of a program created using the Mattkleyn component library."}
+            {"type": "hero", "url": "images/mattkleyn_hero_placeholder.png", "alt_text": "A laptop sitting ontop of a polished concrete floor with large brass service pipes in the background, displaying a UI mockup of a program created using the Mattkleyn component library."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -45,7 +45,7 @@
     {"type": "paragraph", "content": "Each component is also allowed to accept custom props through the API by de-structuring addition props within the component. This feature allows for the potential to create more and bespoke props on a per use bases which can be highly contextual, directly limiting prop bloat and keeping the API clean."},
     {"type": "paragraph", "content": "The component element tags follow semantic rules, by using <button>, <section>, <figure> tags etc. This works with screen reader capabilities and allows for out of the box accessibility consideration.  "},
     {"type": "paragraph", "content": "To allow for further flexibility, components are polymorphic, using the ‘as’ prop, which is tied to the element tag effectively allowing the user to choose the correct semantic tag for that context, whether it is a <section>, <aside>, or <article> for example. This enables the same component to be rendered under a multitude of contexts, increasing use cases and avoided ‘niche’ or one time use components. This consistency in API implementation makes the library intuitive to use and limits the learning curve for effective use."},
-    {"type": "figure", "src": "/images/mattkleyn_as_tag_image.png", "alt": "Image of the as tag and its API usage.", "caption": "Fig 1: The 'as' prop enables polymorphic behaviour within the components, allowing the user to specify the correct semantic tag for the context.", "classname": "as_tag_image"},
+    {"type": "figure", "src": "images/mattkleyn_as_tag_image.png", "alt": "Image of the as tag and its API usage.", "caption": "Fig 1: The 'as' prop enables polymorphic behaviour within the components, allowing the user to specify the correct semantic tag for the context.", "classname": "as_tag_image"},
     {"type": "heading", "level": "h5", "content": "Motion integration"},
     {"type": "paragraph", "content": "Motion is very specific to the UI design, as such the component library is kept to only include micro-interactions on elements such as buttons, and links. To keep to similar paradigms, the motion design on the included components, also consume motion tokens. This helps to create a design system that is not only flexible but also extensible with the capacity to be highly bespoke. Motion tokens include duration scales, and easing curves. The included micro interactions on currently limited to hover, press, and focus states."},
     {"type": "paragraph", "content": "Component interactions, UI animation, page loads, and even scroll based animations are intentionally excluded from the library due to the variability of the animations in terms of degree, scale, and even number of actors. This would be better suited to a motion specific design system. "},
@@ -73,7 +73,7 @@
     "project_description": "A Python based ETL pipeline that extracts and persists job postings from online job posting sites. A multi-phased rollout that is currently in the MVP phase, featuring a CLI UI, data persistence, and a single web scraper pipeline.  Future additions include a Python Flask web UI with user profiles and authentication, multi site extraction, LLM assisted extraction, email digest, automated job application workflows, and potential upskilling recommendations.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/jose_hero_placeholder.png", "alt_text": "A laptop and tablet sitting on a rustic looking shelf surrounded by nik naks, displaying a UI mockup of the JoSe program."}
+            {"type": "hero", "url": "images/jose_hero_placeholder.png", "alt_text": "A laptop and tablet sitting on a rustic looking shelf surrounded by nik naks, displaying a UI mockup of the JoSe program."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -93,7 +93,7 @@
     {"type": "paragraph", "content": "JoSe addresses this by centralizing extraction across multiple sites and enforcing a consistent schema. The MVP focuses on a single extraction pipeline and CLI interface, with a roadmap that includes semantic enrichment via LLMs, multi site ingestion, and a lightweight Flask UI for visualization and user driven workflows."},
     {"type": "heading", "level": "h4", "content": "Architecture and system design"},
     {"type": "paragraph", "content": "JoSe is structured as a modular ETL pipeline with strict separation of concerns:"},
-    {"type": "figure", "src": "/images/jose_system_flow_chart.png", "alt": "A flow chart showing the code flow of the JoSe ETL pipeline.", "caption": "Fig 1: Flow chart of the systems data.", "classname": "jose_flowchart_image"},
+    {"type": "figure", "src": "images/jose_system_flow_chart.png", "alt": "A flow chart showing the code flow of the JoSe ETL pipeline.", "caption": "Fig 1: Flow chart of the systems data.", "classname": "jose_flowchart_image"},
     {"type": "heading", "level": "h5", "content": "Extraction layer"},
     {"type": "paragraph", "content": "The pseudo crawlers parse the DOM to retrieve link URLs from the job board HTML to handle pagination and dynamic content. Using this URL, the BeautifulSoup scraper extracts the available job data fields."},
     {"type": "heading", "level": "h5", "content": "Normalization layer"},
@@ -117,7 +117,7 @@
     {"type": "paragraph", "content": "Early testing validated the architectural assumptions:"},
     {"type": "list", "ordered": false, "content": ["Pure scraping is insufficient due to inconsistent HTML and missing metadata.","Certain transformers (e.g., dates, locations) require semantic interpretation.","A hybrid scraper + LLM pipeline significantly improves extraction reliability."]},
     {"type": "paragraph", "content": "The MVP established a stable foundation for multi site ingestion, schema enforcement, and future automation layers."},
-    {"type": "figure", "src": "/images/jose_module_dependency_graph.png", "alt": "A UML diagram indicating the module dependencies, and the integration of the LLM API", "caption": "Fig 2: Flow chart indicating the system module dependencies and LLM API integration."},
+    {"type": "figure", "src": "images/jose_module_dependency_graph.png", "alt": "A UML diagram indicating the module dependencies, and the integration of the LLM API", "caption": "Fig 2: Flow chart indicating the system module dependencies and LLM API integration."},
     {"type": "heading", "level": "h4", "content": "Conclusion"},
     {"type": "paragraph", "content": "JoSe demonstrates a scalable approach to automating job discovery through modular ETL design, structured data modelling, and planned semantic enrichment. While still in active development, the architecture supports future expansion into automated application workflows, recommendation engines, and richer data visualization. The system’s layered design ensures adaptability as new data sources, ML capabilities, and user requirements emerge."}
     ]
@@ -129,7 +129,7 @@
     "project_description": "A series of experiments in a collaborative setting to replicate existing websites using Webflow - a no/low code web builder tool. The premise was to replicate existing sites to focus on technical implementation across various philosophies, namely a standard approach, Finsweets Clients-First Framework, and Lumos. The replicas include the site layouts, responsive layouts, motion design, and CMS integration where applicable.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/webflow_replica_placeholder.png", "alt_text": "Two desktop monitors sitting next to each other, each displaying a different replica from the project."}
+            {"type": "hero", "url": "images/webflow_replica_placeholder.png", "alt_text": "Two desktop monitors sitting next to each other, each displaying a different replica from the project."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -174,7 +174,7 @@
     "project_description": "The Dev Frog Blog is a multi-user blog platform supporting full CRUD functionalites. All posts are persisted to a PostgreSQL DB, and are fully categorized with joined views tables. Further features include user profiles and authentication, OAuth, and server-side sessions.",
     "media": {
         "images": [
-            {"type": "hero", "url": "/images/dev_frog_blog_hero_placeholder.png", "alt_text": "A laptop sitting atop a large rock deep in the forest, displaying a UI mockup of the dev frog blog platform."}
+            {"type": "hero", "url": "images/dev_frog_blog_hero_placeholder.png", "alt_text": "A laptop sitting atop a large rock deep in the forest, displaying a UI mockup of the dev frog blog platform."}
         ],
         "videos": [
             {"type": "process", "url": "URL or path to project image"}
@@ -199,7 +199,7 @@
     {"type": "paragraph", "content":"Key challenges included designing a modular architecture from an initially monolithic codebase, implementing secure authentication flows, preventing destructive operations through recoverability mechanisms, and ensuring the system could scale as new features were introduced."},
     {"type": "heading", "level": "h4", "content": "Architecture and system design"},
     {"type": "paragraph", "content": "The system began as a monolith and was refactored into a modular architecture with clear separation of concerns. This restructuring enabled isolated testing, improved maintainability, and simplified the transition from JSON persistence to a relational PostgreSQL database."},
-    {"type": "figure", "src": "/images/devfrogblog_route_flow_diagram.svg", "alt": "Flow chart indicating the flow through the REST routes and their respective endpoints.", "caption": "Fig: Flow chart indicating the flow through the REST routes and their respective endpoints."},
+    {"type": "figure", "src": "images/devfrogblog_route_flow_diagram.svg", "alt": "Flow chart indicating the flow through the REST routes and their respective endpoints.", "caption": "Fig: Flow chart indicating the flow through the REST routes and their respective endpoints."},
     {"type": "heading", "level":"h5", "content":"Data modelling"},
     {"type": "paragraph", "content": "The database schema was designed around atomic, purpose specific tables joined through SQL views. This approach reduced query complexity and improved performance by avoiding unnecessary joins in application logic."},
     {"type": "heading", "level":"h5", "content":"Security"},

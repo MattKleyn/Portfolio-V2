@@ -13,7 +13,7 @@ function ReadMoreModal({isModalOpen, toggleModal}) {
                 </GridItem>
                 <GridItem as='div' col='4 / span 6' row='2 / span 3' className='about_me_modal_image_wrapper'>
                     <ImageWrapper className='about_me_modal_image_container'>
-                        <Image src={`${me[5].media.images[1].url}`} alt={`${me[5].media.images[1].alt_text}`} variant='cover'/>
+                        <Image src={`${import.meta.env.BASE_URL}${me[5].media.images[1].url}`} alt={`${me[5].media.images[1].alt_text}`} variant='cover'/>
                     </ImageWrapper>
                 </GridItem>
                 <GridItem as='div' col='4 / span 6' row='5 / span 5' className='about_me_modal_content_wrapper'>

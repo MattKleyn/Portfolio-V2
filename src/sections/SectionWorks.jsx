@@ -40,7 +40,7 @@ function SectionWorks() {
                                     <GridContainer as='div' columns='repeat(1, 1fr)' rows='repeat(1, 1fr)'  className='project_card'>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1' className='project_card_image_wrapper'>
                                             <ImageWrapper className='project_card_image_container'>
-                                                <Image src={project.media.images[0]["url"]} alt={project.media.images[0]["alt_text"]} variant='cover' className='project_card_image l2-reveal-image l2-reveal-image--blur'/>
+                                                <Image src={`${import.meta.env.BASE_URL}${project.media.images[0].url}`} alt={project.media.images[0]["alt_text"]} variant='cover' className='project_card_image l2-reveal-image l2-reveal-image--blur'/>
                                             </ImageWrapper>   
                                         </GridItem>
                                         <GridItem as='div' col='1 / span 1' row='1 / span 1' className='project_card_overlay_wrapper'>
